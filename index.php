@@ -8,7 +8,14 @@
 </head>
 <body>
     <?php
-        echo "S"
+    
+        $item='example';
+        $tmp = shell_exec("python test1.py .$item");
+        echo $tmp;
+    /*
+        $sym = $_POST['symbols'];
+        echo shell_exec("python test1.py .$sym");
+    */
     ?>
 </body>
 </html>
