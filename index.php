@@ -9,13 +9,10 @@
 <body>
     <?php
     
-        $item='example';
-        $tmp = shell_exec("python test1.py .$item");
+        $item_data='example';
+        $tmp = shell_exec("python test1.py .$item_data");
         echo $tmp;
-    /*
-        $sym = $_POST['symbols'];
-        echo shell_exec("python test1.py .$sym");
-    */
+
     ?>
 </body>
 </html>
