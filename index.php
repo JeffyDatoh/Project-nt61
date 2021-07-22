@@ -7,6 +7,8 @@
     <title>Web Server Performance Monitoring System</title>
 </head>
 <body>
-    
+    <?php
+        echo "S"
+    ?>
 </body>
 </html>

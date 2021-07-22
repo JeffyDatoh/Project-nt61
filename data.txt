@@ -1,0 +1,116 @@
+'''
+24-03-2021,10:28:30
+Total Accesses: 1
+Total kBytes: 1
+Uptime: 15
+ReqPerSec: .0666667
+BytesPerSec: 68.2667
+BytesPerReq: 1024
+BusyWorkers: 1
+IdleWorkers: 49
+ConnsTotal: 1
+'''
+
+### เริ่มจับ Request 0 ###
+
+24-03-2021,10:33:30
+Total Accesses: 205
+Total kBytes: 2220
+CPULoad: .0539683
+Uptime: 315
+ReqPerSec: .650794
+BytesPerSec: 7216.76
+BytesPerReq: 11089.2
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 51 ###
+
+24-03-2021,10:38:31
+Total Accesses: 256
+Total kBytes: 2775
+CPULoad: .0341463
+Uptime: 615
+ReqPerSec: .41626
+BytesPerSec: 4620.49
+BytesPerReq: 11100
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 82 ###
+
+24-03-2021,10:43:31
+Total Accesses: 338
+Total kBytes: 3663
+CPULoad: .0305677
+Uptime: 916
+ReqPerSec: .368996
+BytesPerSec: 4094.88
+BytesPerReq: 11097.4
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 41 ###
+
+24-03-2021,10:48:31
+Total Accesses: 379
+Total kBytes: 4107
+CPULoad: .0271382
+Uptime: 1216
+ReqPerSec: .311678
+BytesPerSec: 3458.53
+BytesPerReq: 11096.5
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 21 ###
+
+24-03-2021,10:53:31
+Total Accesses: 400
+Total kBytes: 4329
+CPULoad: .0237467
+Uptime: 1516
+ReqPerSec: .263852
+BytesPerSec: 2924.07
+BytesPerReq: 11082.2
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 81 ###
+
+24-03-2021,10:58:33
+Total Accesses: 481
+Total kBytes: 5216
+CPULoad: .0242157
+Uptime: 1817
+ReqPerSec: .264722
+BytesPerSec: 2939.56
+BytesPerReq: 11104.3
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 30 ###
+
+24-03-2021,11:03:33
+Total Accesses: 513
+Total kBytes: 5553
+CPULoad: .0212465
+Uptime: 2118
+ReqPerSec: .24221
+BytesPerSec: 2684.74
+BytesPerReq: 11084.4
+BusyWorkers: 1
+IdleWorkers: 49
+
+### Request 46 ###
+
+24-03-2021,11:08:33
+Total Accesses: 559
+Total kBytes: 6052
+CPULoad: .0210918
+Uptime: 2418
+ReqPerSec: .231183
+BytesPerSec: 2562.96
+BytesPerReq: 11086.3
+BusyWorkers: 1
+IdleWorkers: 49
