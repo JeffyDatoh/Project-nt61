@@ -3,7 +3,7 @@ import time
 
 while True:
 	h = httplib2.Http(".cache")
-	(resp, content) = h.request("http://203.154.82.59/server-status?auto", "GET")
+	(resp, content) = h.request("http://203.150.107.224/server-status?auto", "GET")
 	raw_content = content.decode("utf-8")
 	new_content = raw_content.splitlines()
 
@@ -24,14 +24,14 @@ while True:
 	time.sleep(300)
 	
 '''
-	24-03-2021,10:05:00
-	Total Accesses: 520
-	Total kBytes: 4557
-	CPULoad: .00701379
-	Uptime: 8412
-	ReqPerSec: .0618165
-	BytesPerSec: 554.728
-	BytesPerReq: 8973.78
-	BusyWorkers: 1
-	IdleWorkers: 49
+28-07-2021,07:45:20
+Total Accesses: 3
+Total kBytes: 5
+CPUChildrenSystem: 0
+CPULoad: .0128535
+Uptime: 389
+ReqPerSec: .00771208
+BytesPerSec: 13.162
+BytesPerReq: 1706.67
+DurationPerReq: 1.33333
 '''
