@@ -10,7 +10,7 @@
     <?php
     
         $item_data='example';
-        $tmp = shell_exec("python test1.py .$item_data");
+        $tmp = shell_exec("python pulldata.py .$item_data");
         echo $tmp;
 
     ?>
