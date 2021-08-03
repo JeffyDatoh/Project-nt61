@@ -1,5 +1,6 @@
 import httplib2
 import time
+import csv
 
 while True:
 	h = httplib2.Http(".cache")
@@ -10,6 +11,22 @@ while True:
 	localtime = time.localtime()
 	result = time.strftime("%d-%m-%Y,%I:%M:%S", localtime)
 
+
+	f = open("pulldata.txt", mode="a+")
+	f.write(result+"\n")
+	f.write(new_content[13]+"\n")
+	f.write(new_content[14]+"\n")
+	f.write(new_content[19]+"\n")
+	f.write(new_content[20]+"\n")
+	f.write(new_content[21]+"\n")
+	f.write(new_content[22]+"\n")
+	f.write(new_content[23]+"\n")
+	f.write(new_content[24]+"\n")
+	f.write(new_content[25]+"\n")
+	f.write("\n")
+	f.close()
+
+	
 	print (result)
 	print (new_content[13])
 	print (new_content[14])
@@ -21,7 +38,8 @@ while True:
 	print (new_content[24])
 	print (new_content[25])
 	print ()
-	time.sleep(300)
+
+	time.sleep(300) # 300
 	
 '''
 28-07-2021,07:45:20
