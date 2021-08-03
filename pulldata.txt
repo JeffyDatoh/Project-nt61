@@ -207,3 +207,190 @@ BytesPerSec: 3.75594
 BytesPerReq: 2083.5
 DurationPerReq: 46.2437
 
+03-08-2021,10:25:26
+Total Accesses: 953
+Total kBytes: 1938
+CPUChildrenSystem: .81
+CPULoad: .0093415
+Uptime: 528395
+ReqPerSec: .00180357
+BytesPerSec: 3.75574
+BytesPerReq: 2082.38
+DurationPerReq: 46.1983
+
+03-08-2021,10:30:26
+Total Accesses: 954
+Total kBytes: 1938
+CPUChildrenSystem: .81
+CPULoad: .00933998
+Uptime: 528695
+ReqPerSec: .00180444
+BytesPerSec: 3.7536
+BytesPerReq: 2080.2
+DurationPerReq: 46.152
+
+03-08-2021,10:35:27
+Total Accesses: 955
+Total kBytes: 1939
+CPUChildrenSystem: .81
+CPULoad: .00934035
+Uptime: 528995
+ReqPerSec: .00180531
+BytesPerSec: 3.75341
+BytesPerReq: 2079.1
+DurationPerReq: 46.1047
+
+03-08-2021,10:40:27
+Total Accesses: 956
+Total kBytes: 1940
+CPUChildrenSystem: .81
+CPULoad: .00934073
+Uptime: 529295
+ReqPerSec: .00180618
+BytesPerSec: 3.75322
+BytesPerReq: 2077.99
+DurationPerReq: 46.0575
+
+03-08-2021,10:45:27
+Total Accesses: 957
+Total kBytes: 1941
+CPUChildrenSystem: .81
+CPULoad: .00934108
+Uptime: 529596
+ReqPerSec: .00180704
+BytesPerSec: 3.75302
+BytesPerReq: 2076.89
+DurationPerReq: 46.0115
+
+03-08-2021,10:50:27
+Total Accesses: 959
+Total kBytes: 1942
+CPUChildrenSystem: .81
+CPULoad: .00934146
+Uptime: 529896
+ReqPerSec: .00180979
+BytesPerSec: 3.75283
+BytesPerReq: 2073.63
+DurationPerReq: 45.9176
+
+03-08-2021,10:55:27
+Total Accesses: 960
+Total kBytes: 1943
+CPUChildrenSystem: .81
+CPULoad: .00934183
+Uptime: 530196
+ReqPerSec: .00181065
+BytesPerSec: 3.75263
+BytesPerReq: 2072.53
+DurationPerReq: 45.8708
+
+03-08-2021,11:00:27
+Total Accesses: 961
+Total kBytes: 1944
+CPUChildrenSystem: .81
+CPULoad: .00934032
+Uptime: 530496
+ReqPerSec: .00181151
+BytesPerSec: 3.75244
+BytesPerReq: 2071.44
+DurationPerReq: 45.8241
+
+03-08-2021,11:05:28
+Total Accesses: 962
+Total kBytes: 1945
+CPUChildrenSystem: .81
+CPULoad: .00934257
+Uptime: 530796
+ReqPerSec: .00181237
+BytesPerSec: 3.75225
+BytesPerReq: 2070.35
+DurationPerReq: 45.7786
+
+03-08-2021,11:10:28
+Total Accesses: 963
+Total kBytes: 1945
+CPUChildrenSystem: .81
+CPULoad: .00934294
+Uptime: 531096
+ReqPerSec: .00181323
+BytesPerSec: 3.75013
+BytesPerReq: 2068.2
+DurationPerReq: 45.7321
+
+03-08-2021,11:15:28
+Total Accesses: 964
+Total kBytes: 1946
+CPUChildrenSystem: .81
+CPULoad: .00934331
+Uptime: 531396
+ReqPerSec: .00181409
+BytesPerSec: 3.74994
+BytesPerReq: 2067.12
+DurationPerReq: 45.6867
+
+03-08-2021,11:20:28
+Total Accesses: 965
+Total kBytes: 1947
+CPUChildrenSystem: .81
+CPULoad: .00934179
+Uptime: 531697
+ReqPerSec: .00181494
+BytesPerSec: 3.74974
+BytesPerReq: 2066.04
+DurationPerReq: 45.6414
+
+03-08-2021,11:25:28
+Total Accesses: 966
+Total kBytes: 1948
+CPUChildrenSystem: .81
+CPULoad: .00934216
+Uptime: 531997
+ReqPerSec: .0018158
+BytesPerSec: 3.74955
+BytesPerReq: 2064.96
+DurationPerReq: 45.5952
+
+03-08-2021,11:30:28
+Total Accesses: 967
+Total kBytes: 1948
+CPUChildrenSystem: .81
+CPULoad: .00934441
+Uptime: 532297
+ReqPerSec: .00181666
+BytesPerSec: 3.74744
+BytesPerReq: 2062.83
+DurationPerReq: 45.5491
+
+03-08-2021,11:35:28
+Total Accesses: 968
+Total kBytes: 1949
+CPUChildrenSystem: .81
+CPULoad: .00934478
+Uptime: 532597
+ReqPerSec: .00181751
+BytesPerSec: 3.74725
+BytesPerReq: 2061.75
+DurationPerReq: 45.5041
+
+03-08-2021,11:40:29
+Total Accesses: 969
+Total kBytes: 1950
+CPUChildrenSystem: .81
+CPULoad: .00934515
+Uptime: 532897
+ReqPerSec: .00181836
+BytesPerSec: 3.74707
+BytesPerReq: 2060.68
+DurationPerReq: 45.4592
+
+03-08-2021,11:45:29
+Total Accesses: 971
+Total kBytes: 1954
+CPUChildrenSystem: .81
+CPULoad: .00934551
+Uptime: 533197
+ReqPerSec: .00182109
+BytesPerSec: 3.75264
+BytesPerReq: 2060.66
+DurationPerReq: 45.3687
+
