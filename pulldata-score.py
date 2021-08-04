@@ -36,7 +36,7 @@ while True:
 	f.write("\n")
 	f.close()
 
-
+	print (result)
 	print (data13[1])
 	print (data14[1])
 	print (data19[1])
@@ -47,4 +47,4 @@ while True:
 	print (data24[1])
 	print (data25[1])
 
-	time.sleep(50)
+	time.sleep(300)
