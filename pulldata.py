@@ -39,7 +39,7 @@ while True:
 	print (new_content[25])
 	print ()
 
-	time.sleep(300) # 300
+	time.sleep(300) # 300 วินาที
 	
 '''
 28-07-2021,07:45:20
