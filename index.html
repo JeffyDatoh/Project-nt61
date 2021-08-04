@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<head>
+
+<title>HOME</title>
+
+</head>
+
+<body>
+    
+ <h1>STATUS</h1>
+
+
+<canvas id="Chart" style="width:100%;max-width:900px"></canvas>
+<script>
+       
+       var times = [0,5,10,15,20,25,30,35,40,45,50,55,60];
+
+    new Chart("Chart", {
+    type: "line",
+    data: {
+        labels: times,
+        datasets: [{ 
+        data: ,
+        borderColor: "red",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "green",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "blue",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "yellow",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "black",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "brown",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "orange",
+        fill: false
+        }, { 
+        data: ,
+        borderColor: "grey",
+        fill: false
+        }]
+    },
+    options: {
+        legend: {display: false}
+    }
+});//graph
+</script> 
+
+
+
+
+
+
+
+
+</body>
+</html>

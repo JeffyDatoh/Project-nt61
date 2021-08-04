@@ -1,18 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Server Performance Monitoring System</title>
-</head>
-<body>
-    <?php
-    
-        $item_data='example';
-        $tmp = shell_exec("python pulldata.py .$item_data");
-        echo $tmp;
+<?php
 
-    ?>
-</body>
-</html>
+    $date[] = array();
+    $Total_Accesses[] = array();
+    $Total_kBytes[] = array();
+    $CPU_ChildrenSystem[] = array();
+    $CPU_Load[] = array();
+    $Uptime[] = array();
+    $Req_PerSec[] = array();
+    $Bytes_PerSec[] = array();
+    $Bytes_PerReq[] = array();
+    $Duration_PerReq[] = array();
+
+    $myFile = "pulldata.txt";
+    $fh = fopen($myFile,'r');
+    while( !feof($myFile) ){
+
+        $date[] = array(fgets($fh));
+
+        $Total_Accesses[] = array(fgets($fh));
+
+        $Total_kBytes[] = array(fgets($fh));
+
+        $CPU_ChildrenSystem[] = array(fgets($fh));
+
+        $CPU_Load[] = array(fgets($fh));
+
+        $Uptime[] = array(fgets($fh));
+
+        $Req_PerSec[] = array(fgets($fh));
+
+        $Bytes_PerSec[] = array(fgets($fh));
+
+        $Bytes_PerReq[] = array(fgets($fh));
+
+        $Duration_PerReq[] = array(fgets($fh));
+
+        $Line[] = array(fgets($fh0));
+
+    }
+    fclose($myFile);
+?>
