@@ -9,7 +9,7 @@
     $data = curl_exec($curl);
 
     curl_close($curl);
-    //print_r($data);
+    print_r($data);
 
     $list = explode("\n",$data);
 
