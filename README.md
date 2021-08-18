@@ -7,4 +7,6 @@ Com-Sci Proeject NT071-608
 
 # To-do List
 
-- Index file
+- ดึงข้อมูล live data &#9989;
+- หน้า index
+
