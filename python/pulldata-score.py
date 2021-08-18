@@ -3,7 +3,7 @@ import time
 
 while True:
 	h = httplib2.Http(".cache")
-	(resp, content) = h.request("http://203.150.107.224/server-status?auto", "GET")
+	(resp, content) = h.request("http://203.150.107.224/server-status", "GET")
 	raw_content = content.decode("utf-8")
 	new_content = raw_content.splitlines()
 

@@ -1,6 +1,5 @@
 import httplib2
 import time
-import csv
 
 while True:
 	h = httplib2.Http(".cache")
@@ -26,7 +25,7 @@ while True:
 	f.write("\n")
 	f.close()
 
-	
+	'''
 	print (result)
 	print (new_content[13])
 	print (new_content[14])
@@ -38,7 +37,7 @@ while True:
 	print (new_content[24])
 	print (new_content[25])
 	print ()
-
+	'''
 	time.sleep(300) # 300 วินาที
 	
 '''

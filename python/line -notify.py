@@ -4,7 +4,7 @@ import time
 
 '''
 h = httplib2.Http(".cache")
-(resp, content) = h.request("http://203.154.82.59/server-status?auto", "GET")
+(resp, content) = h.request("http://203.150.107.224/server-status?auto", "GET")
 raw_content = content.decode("utf-8")
 new_content = raw_content.splitlines()
 '''

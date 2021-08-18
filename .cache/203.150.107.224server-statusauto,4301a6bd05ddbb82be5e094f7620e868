@@ -1,0 +1,47 @@
+status: 200
+date: Wed, 04 Aug 2021 16:36:02 GMT
+server: Apache/2.4.41 (Ubuntu)
+vary: Accept-Encoding
+content-length: 970
+content-type: text/plain; charset=ISO-8859-1
+-content-encoding: gzip
+content-location: http://203.150.107.224/server-status?auto
+-varied-accept-encoding: gzip, deflate
+
+203.150.107.224
+ServerVersion: Apache/2.4.41 (Ubuntu)
+ServerMPM: event
+Server Built: 2020-08-12T19:46:17
+CurrentTime: Wednesday, 04-Aug-2021 23:36:02 +07
+RestartTime: Wednesday, 28-Jul-2021 19:38:50 +07
+ParentServerConfigGeneration: 7
+ParentServerMPMGeneration: 6
+ServerUptimeSeconds: 619031
+ServerUptime: 7 days 3 hours 57 minutes 11 seconds
+Load1: 0.00
+Load5: 0.00
+Load15: 0.00
+Total Accesses: 1647
+Total kBytes: 2685
+Total Duration: 44460
+CPUUser: 23.27
+CPUSystem: 32.46
+CPUChildrenUser: 1.16
+CPUChildrenSystem: 1.01
+CPULoad: .00935333
+Uptime: 619031
+ReqPerSec: .00266061
+BytesPerSec: 4.44152
+BytesPerReq: 1669.36
+DurationPerReq: 26.9945
+BusyWorkers: 1
+IdleWorkers: 49
+Processes: 2
+Stopping: 0
+BusyWorkers: 1
+IdleWorkers: 49
+ConnsTotal: 0
+ConnsAsyncWriting: 0
+ConnsAsyncKeepAlive: 0
+ConnsAsyncClosing: 0
+Scoreboard: _____________W____________________________________....................................................................................................
