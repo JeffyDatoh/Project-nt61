@@ -1,69 +1,82 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
 
-    header("Access-Control-Allow-Origin: *");
-    header("Content-Type:application/json; charset=UTF-8");
+    <style>
+        body{
+            width: 700px;
+            margin: 3rem auto;
+        }
 
-    $url = "https://nithi.cs.psu.ac.th/server-status?auto";
+        .chart-container{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="chart-container">
+        <canvas id="graph"></canvas>
+    </div>
 
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_HEADER, false);
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script></script>
 
-    $data = curl_exec($curl);
+    <script>
 
-    curl_close($curl);
-    print_r($data);
+        $(document).ready(function() {
+            showGraph();
+        });
 
-    $list = explode("\n",$data);
-    /*
-    // show full data name and value
-    echo $list[4],"<br>";
-    echo $list[13],"<br>";
-    echo $list[14],"<br>";
-    echo $list[17],"<br>";
-    echo $list[20],"<br>";
-    echo $list[21],"<br>";
-    echo $list[22],"<br>";
-    echo $list[23],"<br>";
-    echo $list[24],"<br>";
-    echo $list[25],"<br>";
-    */
+        function showGraph() {
+            $.post('pulldata.php', function(data) {
+                console.log(data);
+                let Total_Accesses = [];
+                let Total_kBytes= [];
+                let CPU_System= [];
+                let CPU_Load= [];
+                let Uptime= [];
+                let Req_PerSec= [];
+                let Bytes_PerSec= [];
+                let Bytes_PerReq= [];
+                let Duration_PerReq= [];
 
-    // show only value
-    $Total_Accesses= explode(":",$list[13]);
-    $Total_kBytes= explode(":",$list[14]);
-    $CPUSystem= explode(":",$list[17]);
-    $CPULoad= explode(":",$list[20]);
-    $Uptime= explode(":",$list[21]);
-    $ReqPerSec= explode(":",$list[22]);
-    $BytesPerSec= explode(":",$list[23]);
-    $BytesPerReq= explode(":",$list[24]);
-    $DurationPerReq= explode(":",$list[25]);
-    /*
-    echo "<br>","<br>";
-    echo $Total_Accesses[1],"<br>";
-    echo $Total_kBytes[1],"<br>";
-    echo $CPUSystem[1],"<br>";
-    echo $CPULoad[1],"<br>";
-    echo $Uptime[1],"<br>";
-    echo $ReqPerSec[1],"<br>";
-    echo $BytesPerSec[1],"<br>";
-    echo $BytesPerReq[1],"<br>";
-    echo $DurationPerReq[1],"<br>";
-    */
-    $response = new stdClass();
-		$response->T_AC=$Total_Accesses;
-		$response->T_KB=$Total_kBytes;
-        $response->CP_ST=$CPUSystem;
-        $response->CP_L=$CPU_Load;
-        $response->UP=$Uptime;
-        $response->RQ_PS=$Req_PerSec;
-        $response->B_PS=$Bytes_PerSec;
-        $response->B_PR=$Bytes_PerReq;
-        $response->D_PR=$Duration_PerReq;
-       
-		$response_json = json_encode($response);
-		echo $response_json;
-?>
+                for(let i in data) {
+                    Total_Accesses.push(data[i].Total_Accesses);
+                    Total_kBytes.push(data[i].Total_kBytes);
+                    CPU_System.push(data[i].CPU_System);
+                    CPU_Load.push(data[i].CPU_Load);
+                    Uptime.push(data[i].Uptime);
+                    Req_PerSec.push(data[i].Req_PerSec);
+                    Bytes_PerSec.push(data[i].Bytes_PerSec);
+                    Bytes_PerReq.push(data[i].Bytes_PerReq);
+                    Duration_PerReq.push(data[i].Duration_PerReq); 
+                }
+                var times = [0,5,10,15,20,25,30,35,40,45,50,55,60];
+                let chart_Total_Accesses = {
+                    labels: times,
+                    datasets: [{
+                            label: 'Total Accesses',
+                            backgroundColor: '#49e2ff',
+                            borderColor: '#46d5f1',
+                            hoverBackgroundColor: '#CCCCCC',
+                            hoverBorderColor: '#666666',
+                            data: Total_Accesses
+                    }]
+                };
+                let graphTarget = $('#graph');
+                let barGraph = new Chart(graphTarget,{
+                    type: 'line',
+                    data: chart_Total_Accesses
+                })
+            })
+        }
 
+    </script>
+</body>
+</html>
