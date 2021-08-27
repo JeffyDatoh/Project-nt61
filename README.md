@@ -5,14 +5,14 @@ Com-Sci Proeject NT071-608
 
 - PHP, CSS, HTML, Python, MariaDB
 
-# To-do List
+# To-do List เหลือเวลา 2 สัปดาห์ !!!
 
 ## หน้าหลัก
 - หน้า index &#10060;
 
 ## data
 - ดึงข้อมูล  &#10004; 
-live data &#10004;
+- live data &#10004;
 
 ##chart
 - chart ของ data แต่ละตัว &#10060;
