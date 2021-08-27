@@ -3,22 +3,25 @@ Com-Sci Proeject NT071-608
 
 - Web Server Performance Monitoring System 
 
-- PHP, CSS, HTML, Python, MariaDB
+- PHP, CSS, HTML, javascript, Axios, chartjs
 
 # To-do List เหลือเวลา 2 สัปดาห์ !!!
 
-## หน้าหลัก
+## Index
 - หน้า index &#10060;
 
-## data
+## Server
+- หน้าเลือก Server &#10060;
+
+## Data
 - ดึงข้อมูล  &#10004; 
 - live data &#10004;
 
-##chart
+## Chart
 - chart ของ data แต่ละตัว &#10060;
 
-##detect
+## Detect
 - detect data แต่ละตัว &#10060;
 
-## แจ้งเตือน
+## Notify
 - แจ้งเตือนไปยัง line notify &#10060;
