@@ -3,7 +3,7 @@ Com-Sci Proeject NT071-608
 
 - Web Server Performance Monitoring System 
 
-- PHP, CSS, HTML, javascript, Axios, chartjs
+- PHP, CSS, HTML, Vue.js, Axios, chartjs
 
 # To-do List เหลือเวลา 2 สัปดาห์ !!!
 
