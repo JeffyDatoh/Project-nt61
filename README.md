@@ -18,7 +18,7 @@ Com-Sci Proeject NT071-608
 - live data &#10004;
 
 ## Chart
-- chart ของ data แต่ละตัว &#10060;
+- chart ของ data แต่ละตัว &#10004;
 
 ## Detect
 - detect data แต่ละตัว &#10060;
