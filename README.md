@@ -25,3 +25,15 @@ Com-Sci Proeject NT071-608
 
 ## Notify
 - แจ้งเตือนไปยัง line notify &#10060;
+
+
+1 cron: every 5 min query
+24 * 12
+
+2 cron: 30 sec
+1. rn = random number
+2. check rn > 0.5
+3. curl read website from server
+random page
+
+3 Attack: 1 min
