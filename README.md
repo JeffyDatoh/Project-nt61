@@ -23,11 +23,11 @@ Com-Sci Proeject NT071-608
     - ผลต่าง data &#10004;
 
 ## Detect
-- avg data &#10004;
+- average data &#10004;
 - detect data แต่ละตัว &#10060;
 
 ## Notify
-- แจ้งเตือนไปยัง line notify &#10060;
+- Alert to line notify &#10060;
 
 ## เอกสารที่ต้องส่ง
 - Report &#10060;
