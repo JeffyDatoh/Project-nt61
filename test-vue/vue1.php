@@ -534,7 +534,7 @@
                                 if(this.chartdata.datasets[0].data.length == 0){
                                     this.chartdata.datasets[0].data.push(0);     
                                 }else {
-                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                                 }
                             }
                         }else{
@@ -543,7 +543,7 @@
                             this.chartdata.datasets[0].data.splice(index, 1);
                             //push data
                             this.chartdata.datasets[0].pulldata.push(Bytes_PerReq);
-                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                         }
 
                         //show data
@@ -601,7 +601,7 @@
                                 if(this.chartdata.datasets[0].data.length == 0){
                                     this.chartdata.datasets[0].data.push(0);     
                                 }else {
-                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                                 }
                             }
                         }else{
@@ -610,7 +610,7 @@
                             this.chartdata.datasets[0].data.splice(index, 1);
                             //push data
                             this.chartdata.datasets[0].pulldata.push(Duration_PerReq);
-                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                         }
 
                         //show data

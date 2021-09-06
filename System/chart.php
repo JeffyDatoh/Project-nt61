@@ -51,7 +51,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Total_Accesses);
 
@@ -118,7 +118,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Total_kBytes);
 
@@ -184,7 +184,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.CPU_System);
 
@@ -250,7 +250,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.CPU_Load);
 
@@ -317,7 +317,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Uptime);
 
@@ -384,7 +384,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Req_PerSec);
 
@@ -451,7 +451,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Bytes_PerSec);
 
@@ -518,7 +518,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Bytes_PerReq);
 
@@ -534,7 +534,7 @@
                                 if(this.chartdata.datasets[0].data.length == 0){
                                     this.chartdata.datasets[0].data.push(0);     
                                 }else {
-                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                                 }
                             }
                         }else{
@@ -543,7 +543,7 @@
                             this.chartdata.datasets[0].data.splice(index, 1);
                             //push data
                             this.chartdata.datasets[0].pulldata.push(Bytes_PerReq);
-                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                         }
 
                         //show data
@@ -585,7 +585,7 @@
         methods: {
             getData: function() {
                 setInterval(() => {
-                    axios.get("data3.php").then((response) => {
+                    axios.get("data.php").then((response) => {
                         
                         console.log(response.data.Duration_PerReq);
 
@@ -601,7 +601,7 @@
                                 if(this.chartdata.datasets[0].data.length == 0){
                                     this.chartdata.datasets[0].data.push(0);     
                                 }else {
-                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                                 }
                             }
                         }else{
@@ -610,7 +610,7 @@
                             this.chartdata.datasets[0].data.splice(index, 1);
                             //push data
                             this.chartdata.datasets[0].pulldata.push(Duration_PerReq);
-                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]));
                         }
 
                         //show data

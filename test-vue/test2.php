@@ -16,13 +16,15 @@
 <body>
     <p>veu</p>
 
-    <div id="chart"></div>
+    <div id="app">
+    <chart_ta></chart_ta>
+    </div>
 
 
     <script>
+
     var times = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
-    new Vue({
-        el: '#chart',
+    Vue.component('chart_ta', {
         extends: VueChartJs.Line,
         data: () => ({
             chartdata: {
@@ -30,8 +32,7 @@
                 datasets: [{
                     label: 'Total_Accesses',
                     backgroundColor: '#f87979',
-                    data: [],
-                    pulldata: []
+                    data: this.pulldata
                 }]
             },
             options: {
@@ -39,7 +40,20 @@
                 maintainAspectRatio: false
             }
         }),
-        methods: {
+        mounted() {
+            this.renderChart(this.chartdata, this.options)
+        }
+       
+    })
+    var vm = new Vue({
+            el: '#app',
+            data: () => {
+                return{
+                    pulldata: []
+                }
+                    
+            },
+            methods: {
             getData: function() {
                 setInterval(() => {
                     axios.get("data3.php").then((response) => {
@@ -47,45 +61,31 @@
                         console.log(response.data.Total_Accesses);
 
                         //parseInt from response.data
-                        
                         var Total_Accesses = parseInt(response.data.Total_Accesses);
-                        //upades data
-                        var index = 0;
-                        if(this.chartdata.datasets[0].pulldata.length < 13) {
-                            //push data
-                            this.chartdata.datasets[0].pulldata.push(Total_Accesses);
 
-                            if(this.chartdata.datasets[0].data.length < 13){
-                                if(this.chartdata.datasets[0].data.length == 0){
-                                    this.chartdata.datasets[0].data.push(0);     
-                                }else {
-                                    this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
-                                }
-                            }
+                        //update data
+                        var index = 0;
+                        if(this.pulldata.length < 13) {
+                            //push data
+                            this.pulldata.push(Total_Accesses);
                         }else{
                             //romove data index 0
-                            this.chartdata.datasets[0].pulldata.splice(index, 1);
-                            this.chartdata.datasets[0].data.splice(index, 1);
+                            this.pulldata.splice(index, 1);
                             //push data
-                            this.chartdata.datasets[0].pulldata.push(Total_Accesses);
-                            this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
+                            this.pulldata.push(Total_Accesses);
                         }
-
                         //show data
-                        console.log(this.chartdata.datasets[0].pulldata)
-                        console.log(this.chartdata.datasets[0].data)
+                        console.log(this.pulldata)
 
                         //render chart update
-                        this.renderChart(this.chartdata, this.options)
+                        this.chart_ta.renderChart(this.chartdata, this.options)
 
                     }).catch((err) => console.log(err));
                 }, 5000); // 5000 =  5 วินาที
-            },
-        },
-
-        mounted() {
-            this.renderChart(this.chartdata, this.options)
+            }
+        },mounted() {
             this.getData()
+            this.chart_ta.renderChart(this.chartdata, this.options)
         }
     })
     </script>

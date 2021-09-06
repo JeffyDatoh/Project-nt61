@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-<script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test </title>
+    <title> Web Server Performance Monitoring System </title>
 </head>
 
 <body>
-    <p>veu</p>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
 
-    <div id="chart"></div>
+    <div id="app">
+        <h2>{{ message }} </h2>
+        <chart_ta></chart_ta>
+    </div>
 
+<?php
+        $url = "https://nithi.cs.psu.ac.th/server-status?auto";
+
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_HEADER, false);
+    
+        $data = curl_exec($curl);
+    
+        curl_close($curl);
+        //print_r($data);
+    
+        $list = explode("\n",$data);
+    
+        $Total_Accesses= explode(": ",$list[13]);
+        $Total_kBytes= explode(": ",$list[14]);
+        $CPU_System= explode(": ",$list[17]);
+        $CPU_Load= explode(": ",$list[20]);
+        $Uptime= explode(": ",$list[21]);
+        $Req_PerSec= explode(": ",$list[22]);
+        $Bytes_PerSec= explode(": ",$list[23]);
+        $Bytes_PerReq= explode(": ",$list[24]);
+        $Duration_PerReq= explode(": ",$list[25]);
+
+        echo $Total_Accesses[1];
+?>
 
     <script>
     var times = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
-    new Vue({
-        el: '#chart',
+    
+    // chart Total_Accesses
+    Vue.component('chart_ta', {
         extends: VueChartJs.Line,
         data: () => ({
             chartdata: {
@@ -47,14 +75,13 @@
                         console.log(response.data.Total_Accesses);
 
                         //parseInt from response.data
-                        
                         var Total_Accesses = parseInt(response.data.Total_Accesses);
-                        //upades data
+
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].pulldata.length < 13) {
                             //push data
                             this.chartdata.datasets[0].pulldata.push(Total_Accesses);
-
                             if(this.chartdata.datasets[0].data.length < 13){
                                 if(this.chartdata.datasets[0].data.length == 0){
                                     this.chartdata.datasets[0].data.push(0);     
@@ -87,6 +114,13 @@
             this.renderChart(this.chartdata, this.options)
             this.getData()
         }
+    })
+    var vm = new Vue({
+            el: '#app',
+            data: {
+                message: 'Web Server Performance Monitoring System'
+            },
+            
     })
     </script>
 

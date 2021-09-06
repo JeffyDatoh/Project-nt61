@@ -57,7 +57,7 @@
                         //parseInt from response.data
                         var Total_Accesses = parseInt(response.data.Total_Accesses);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -113,7 +113,7 @@
                         //parseInt from response.data
                         var Total_kBytes = parseInt(response.data.Total_kBytes);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -168,7 +168,7 @@
                         //parseInt from response.data
                         var CPU_System = parseFloat(response.data.CPU_System);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -223,7 +223,7 @@
                         //parseInt from response.data
                         var CPU_Load = parseFloat(response.data.CPU_Load);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -279,7 +279,7 @@
                         //parseInt from response.data
                         var Uptime = parseInt(response.data.Uptime);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -335,7 +335,7 @@
                         //parseInt from response.data
                         var Req_PerSec = parseFloat(response.data.Req_PerSec);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -391,7 +391,7 @@
                         //parseInt from response.data
                         var Bytes_PerSec = parseFloat(response.data.Bytes_PerSec);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -447,7 +447,7 @@
                         //parseInt from response.data
                         var Bytes_PerReq = parseFloat(response.data.Bytes_PerReq);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -503,7 +503,7 @@
                         //parseInt from response.data
                         var Duration_PerReq = parseFloat(response.data.Duration_PerReq);
 
-                        //upades data
+                        //update data
                         var index = 0;
                         if(this.chartdata.datasets[0].data.length < 13) {
                             //push data
@@ -536,7 +536,8 @@
             el: '#app',
             data: {
                 message: 'Web Server Performance Monitoring System'
-            }
+            },
+            
     })
     </script>
 
