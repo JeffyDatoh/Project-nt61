@@ -21,6 +21,8 @@
 
     <script>
     var times = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+    var mean = 0;
+    var avg = 0;
     new Vue({
         el: '#chart',
         extends: VueChartJs.Line,
@@ -31,7 +33,7 @@
                     label: 'Total_Accesses',
                     backgroundColor: '#f87979',
                     data: [],
-                    pulldata: []
+                    pulldata: [],
                 }]
             },
             options: {
@@ -71,17 +73,28 @@
                             this.chartdata.datasets[0].data.push((this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-1]) - (this.chartdata.datasets[0].pulldata[(this.chartdata.datasets[0].pulldata.length)-2]));
                         }
 
+                        var total = 0,
+                            length = this.chartdata.datasets[0].data.length;
+
+                        for (var i = 0; i < length; i++) {
+                            total += parseFloat(this.chartdata.datasets[0].data[i]);
+                        }
+                        avg = total / length;
+                        
+
                         //show data
                         console.log(this.chartdata.datasets[0].pulldata)
                         console.log(this.chartdata.datasets[0].data)
-
+                        console.log(avg)
                         //render chart update
                         this.renderChart(this.chartdata, this.options)
 
                     }).catch((err) => console.log(err));
                 }, 5000); // 5000 =  5 วินาที
             },
+
         },
+            
 
         mounted() {
             this.renderChart(this.chartdata, this.options)
