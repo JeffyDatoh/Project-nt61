@@ -1,28 +1,12 @@
-import requests
-import httplib2
-import time
+import http.client
 
-'''
-h = httplib2.Http(".cache")
-(resp, content) = h.request("http://203.150.107.224/server-status?auto", "GET")
-raw_content = content.decode("utf-8")
-new_content = raw_content.splitlines()
-'''
-
-localtime = time.localtime()
-result = time.strftime("%d-%m-%Y,%I:%M:%S", localtime)
-
-
-
-url = "https://notify-api.line.me/api/notify"
-
-#payload='message= {}\n'.format(result,)
-payload= 'message=\n\t\t\t!! Alert !!\n Date: 24-03-2021\n Time: 10:43:31\n Problem: มีจำนวน Request ผิดปกติ\n Total Accesses: 338 '
+conn = http.client.HTTPSConnection("notify-api.line.me")
+payload = 'message=Hello%20OOOOOOOOOOOOOO'
 headers = {
   'Content-Type': 'application/x-www-form-urlencoded',
-  'Authorization': 'Bearer QcArUmjT0giVZ3VeouoBRlef1aMCU7IUFTfUXxokaMV'
+  'Authorization': 'Bearer 7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG'
 }
-
-response = requests.request("POST", url, headers=headers, data=payload, encode='utf-8')
-
-print(response.text)
+conn.request("POST", "/api/notify", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
