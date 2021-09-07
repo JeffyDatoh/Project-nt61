@@ -27,6 +27,7 @@ Com-Sci Proeject NT071-608
 - detect data แต่ละตัว &#10060;
 
 ## Notify
+- test to line notify &#10004;
 - Alert to line notify &#10060;
 
 ## เอกสารที่ต้องส่ง
