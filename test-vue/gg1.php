@@ -89,12 +89,14 @@
                         avg = total / length;
 
                         // check data
+                        /*
                         if (this.chartdata.datasets[0].data[(length - 1 ) > avg]) {
                             alert("Attack !!")
-                        }
+                        }*/
                         //show data
                         console.log(this.chartdata.datasets[0].pulldata)
                         console.log(this.chartdata.datasets[0].data)
+                        console.log(this.chartdata.datasets[0].data[this.chartdata.datasets[0].data.length - 1])
                         console.log(total)
                         console.log(avg)
 
