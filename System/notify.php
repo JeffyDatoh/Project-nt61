@@ -2,6 +2,12 @@
 
 $curl = curl_init();
 
+// token
+$token = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+
+// message
+$message = 'Hello gg';
+
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://notify-api.line.me/api/notify',
   CURLOPT_RETURNTRANSFER => true,
@@ -11,10 +17,10 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => 'message=Hello%20OOOOOOOOOOOOOO',
+  CURLOPT_POSTFIELDS => 'message='. $message,
   CURLOPT_HTTPHEADER => array(
     'Content-Type: application/x-www-form-urlencoded',
-    'Authorization: Bearer 7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG'
+    'Authorization: Bearer '. $token
   ),
 ));
 
@@ -22,4 +28,16 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 echo $response;
+
+/*
+function function_alert($response) {
+      
+  // Display the alert box 
+  echo "<script>alert('$response');</script>";
+}
+
+
+// Function call
+function_alert($response);
+*/
 ?>
