@@ -28,7 +28,7 @@ Com-Sci Proeject NT071-608
 
 ## Notify
 - test to line notify &#10004;
-- ปุ่ม สำหรับ ใส่ token
+- ปุ่ม สำหรับ ใส่ token &#10060;
 - Alert to line notify &#10060;
 
 ## เอกสารที่ต้องส่ง
