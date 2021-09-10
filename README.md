@@ -5,7 +5,7 @@ Com-Sci Proeject NT071-608
 
 - PHP, CSS, HTML, Vue.js, Axios, chartjs
 
-# To-do List เหลือเวลา 1 สัปดาห์ !!!
+# To-do List เหลือเวลา 6 วัน  🔥  🔥  🔥 
 
 ## Index
 - หน้า index &#10060;
