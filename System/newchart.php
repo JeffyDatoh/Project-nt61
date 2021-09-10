@@ -549,6 +549,7 @@
                                     this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-1]) - (this.pdata_bps[(this.pdata_bps.length)-2]));
                                 }
                             }
+
                             //***** push data Bytes_PerReq *****
                             this.pdata_bpr.push(Bytes_PerReq);
                             if(this.data_bpr.length < 13){
@@ -642,6 +643,85 @@
                         }
                         avg_ta = total_ta / ((length_ta)-1);
 
+
+                        // ***** average data Total_kBytes *****
+                        var total_tk = 0,
+                            length_tk = this.data_tk.length;
+
+                        for (var i = 0; i < length_tk; i++) {
+                            total_tk += parseFloat(this.data_tk[i]);
+                        }
+                        avg_tk = total_tk / ((length_tk)-1);
+
+
+                        // ***** average data CPU_System *****
+                        var total_cpus = 0,
+                            length_cpus = this.data_cpus.length;
+
+                        for (var i = 0; i < length_cpus; i++) {
+                            total_cpus += parseFloat(this.data_cpus[i]);
+                        }
+                        avg_cpus = total_cpus / ((length_cpus)-1);
+
+                        
+                        // ***** average data CPU_Load *****
+                        var total_cpul = 0,
+                            length_cpul = this.data_cpul.length;
+
+                        for (var i = 0; i < length_cpul; i++) {
+                            total_cpul += parseFloat(this.data_cpul[i]);
+                        }
+                        avg_cpl = total_cpul / ((length_cpul)-1);
+                        
+
+                        // ***** average data Uptime *****
+                        var total_ut = 0,
+                            length_ut = this.data_ut.length;
+
+                        for (var i = 0; i < length_ut; i++) {
+                            total_ut += parseFloat(this.data_ut[i]);
+                        }
+                        avg_ut = total_ut / ((length_ut)-1);
+                        
+
+                        // ***** average data Req_PerSec *****
+                        var total_rps = 0,
+                            length_rps = this.data_rps.length;
+
+                        for (var i = 0; i < length_rps; i++) {
+                            total_rps += parseFloat(this.data_rps[i]);
+                        }
+                        avg_rps = total_rps / ((length_rps)-1);
+                        
+
+                        // ***** average data Bytes_PerSec *****
+                        var total_bps = 0,
+                            length_bps = this.data_bps.length;
+
+                        for (var i = 0; i < length_bps; i++) {
+                            total_bps += parseFloat(this.data_bps[i]);
+                        }
+                        avg_bps = total_bps / ((length_bps)-1);
+                        
+
+                        // ***** average data Bytes_PerReq *****
+                        var total_bpr = 0,
+                            length_bpr = this.data_bpr.length;
+
+                        for (var i = 0; i < length_bpr; i++) {
+                            total_bpr += parseFloat(this.data_bpr[i]);
+                        }
+                        avg_bpr = total_bpr / ((length_bpr)-1);
+                        
+
+                        // ***** average data Duration_PerReq *****
+                        var total_dpr = 0,
+                            length_dpr = this.data_dpr.length;
+
+                        for (var i = 0; i < length_dpr; i++) {
+                            total_dpr += parseFloat(this.data_dpr[i]);
+                        }
+                        avg_dpr = total_dpr / ((length_dpr)-1);
 
 
                         //**** show data ****
