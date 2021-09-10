@@ -6,10 +6,14 @@ $curl = curl_init();
 $token = isset($_POST['token']) ? $_POST['token'] : "";
 $message = isset($_POST['message']) ? $_POST['message'] : "";
 
+/*
 // token
-$token_test = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+$token_test_notify = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+$token_test1 = 'SfnqkiB0S7187xvsbdEvwZKfQcNYvcpm603DQhAwxyh';
+
 // message
 $message_test = 'Hello gg';
+*/
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://notify-api.line.me/api/notify',

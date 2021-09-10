@@ -13,11 +13,13 @@
 </form>
 
 <?php
+/*
     if (isset($_POST['Submit'])) {
         $_SESSION['message'] = $_POST['message'];
         $_SESSION['token'] = $_POST['token'];
 
         // Use the following code to print out the variables.
+        
         echo 'Session: '.$_SESSION['message'];
         echo '<br>';
         echo 'POST: '.$_POST['message'];
@@ -26,4 +28,5 @@
         echo '<br>';
         echo 'POST: '.$_POST['token'];
     }
+    */
 ?> 
