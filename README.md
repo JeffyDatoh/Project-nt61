@@ -23,12 +23,12 @@ Com-Sci Proeject NT071-608
     - ผลต่าง data &#10004;
 
 ## Detect
-- average data &#10004;
+- average data &#10004; ไฟล์ newchart.php
 - detect data แต่ละตัว &#10060;
 
 ## Notify
-- test to line notify &#10004;
-- ปุ่ม สำหรับ ใส่ token &#10060;
+- test to line notify &#10004; ไฟล์ notify.php
+- ปุ่ม สำหรับ ใส่ token &#10004; ไฟล์ qwerty.php
 - Alert to line notify &#10060;
 
 ## เอกสารที่ต้องส่ง
