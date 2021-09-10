@@ -28,7 +28,7 @@ Com-Sci Proeject NT071-608
 
 ## Notify
 - test to line notify &#10004;      ไฟล์ notify.php
-- ปุ่ม สำหรับ ใส่ token &#10004;        ไฟล์ qwerty.php
+- ปุ่ม สำหรับ ใส่ message and token &#10004;        ไฟล์ qwerty.php
 - Alert to line notify &#10060;
 
 ## เอกสารที่ต้องส่ง
