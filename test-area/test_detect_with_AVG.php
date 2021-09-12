@@ -3,7 +3,7 @@
 <html>
 <body>
 <?php require 'notify.php';?>
-    <scrip>
+    <script>
         if(avg_ta + 25 < total_ta  || avg_ta + 50 < total_ta) 
             function_alert();
         if(avg_tk + 25 < total_tk  || avg_tk + 50 < total_tk)  
@@ -22,7 +22,7 @@
             function_alert();
         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr)  
             function_alert();
-    </scrip> 
+    </script> 
     //เอาไปใส่หลังค่าเฉลี่ยในไฟล์new_chartเพื่อเอาไปเทสดู
     //ปรับแก้ตัวเลขที่เพิ่มหลังavgแต่ละตัวเพื่อนำไปใช้จริง
     //ฝากเทสหน่อย
