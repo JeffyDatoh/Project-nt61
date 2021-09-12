@@ -22,6 +22,9 @@
             function_alert();
         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr)  
             function_alert();
-    </scrip>
+    </scrip> 
+    //เอาไปใส่หลังค่าเฉลี่ยในไฟล์new_chartเพื่อเอาไปเทสดู
+    //ปรับแก้ตัวเลขที่เพิ่มหลังavgแต่ละตัวเพื่อนำไปใช้จริง
+    //ฝากเทสหน่อย
 </body>
 </html>
