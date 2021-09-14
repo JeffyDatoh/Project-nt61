@@ -60,12 +60,30 @@
             <div class="items">
                 <chart_dpr :data_dpr="data_dpr" />
             </div>
+            <div class="item">
+                <p id="data_ta"></p>
+                <p id="data_tk"></p>
+                <p id="data_cpus"></p>
+                <p id="data_cpul"></p>
+                <p id="data_ut"></p>
+                <p id="data_rps"></p>
+                <p id="data_bps"></p>
+                <p id="data_bpr"></p>
+                <p id="data_dpr"></p>
+
+                <p id="avg_ta"></p>
+                <p id="avg_tk"></p>
+                <p id="avg_cpus"></p>
+                <p id="avg_cpl"></p>
+                <p id="avg_ut"></p>
+                <p id="avg_rps"></p>
+                <p id="avg_bps"></p>
+                <p id="avg_bpr"></p>
+                <p id="avg_dpr"></p>
+            </div>
         </div>
 
-
-        <div>okok</div>
     </div>
-
 
     <script>
     var times = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
@@ -723,7 +741,29 @@
                             total_dpr += parseFloat(this.data_dpr[i]);
                         }
                         avg_dpr = total_dpr / ((length_dpr)-1);
-                        
+
+                        //**** Set ID****
+                            //**** Data ****
+                            document.getElementById("data_ta").innerHTML = "Total Accesses : "+data_ta;
+                            document.getElementById("data_tk").innerHTML = "Total kBytes : "+data_tk;
+                            document.getElementById("data_cpus").innerHTML = "CPU System : "+data_cpus;
+                            document.getElementById("data_cpul").innerHTML = "CPU Load : "+data_cpul;
+                            document.getElementById("data_ut").innerHTML = "Uptime : "+data_ut;
+                            document.getElementById("data_rps").innerHTML = "Require Per Second : "+data_rps;
+                            document.getElementById("data_bps").innerHTML = "Byptes Per Second : "+data_bps;
+                            document.getElementById("data_bpr").innerHTML = "Byptes Per Require : "+data_bpr;
+                            document.getElementById("data_dpr").innerHTML = "Duration Per Require : "+data_dpr;
+                            //**** AVG ****
+                            document.getElementById("avg_ta").innerHTML = "Average Total Accesses : "+avg_ta;
+                            document.getElementById("avg_tk").innerHTML = "Average Total kBytes : "+avg_tk;
+                            document.getElementById("avg_cpus").innerHTML = "Average CPU System : "+avg_cpus;
+                            document.getElementById("avg_cpl").innerHTML = "Average CPU Load : "+avg_cpl;
+                            document.getElementById("avg_ut").innerHTML = "Average Uptime : "+avg_ut;
+                            document.getElementById("avg_rps").innerHTML = "Average Require Per Second : "+avg_rps;
+                            document.getElementById("avg_bps").innerHTML = "Average Byptes Per Second : "+avg_bps;
+                            document.getElementById("avg_bpr").innerHTML = "Average Byptes Per Require : "+avg_bpr;
+                            document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
+                            
                         //**** alert ****
                    
                         /*
