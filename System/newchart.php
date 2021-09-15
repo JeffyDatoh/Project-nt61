@@ -575,7 +575,7 @@
                                 if(this.data_bpr.length == 0){
                                     this.data_bpr.push(0);     
                                 }else {
-                                    this.data_bpr.push((this.pdata_bpr[(this.pdata_bpr.length)-1]) - (this.pdata_bpr[(this.pdata_bpr.length)-2]));
+                                    this.data_bpr.push((this.pdata_bpr[(this.pdata_bpr.length)-2]) - (this.pdata_bpr[(this.pdata_bpr.length)-1]));
                                 }
                             }
 
@@ -585,7 +585,7 @@
                                 if(this.data_dpr.length == 0){
                                     this.data_dpr.push(0);     
                                 }else {
-                                    this.data_dpr.push((this.pdata_dpr[(this.pdata_dpr.length)-1]) - (this.pdata_dpr[(this.pdata_dpr.length)-2]));
+                                    this.data_dpr.push((this.pdata_dpr[(this.pdata_dpr.length)-2]) - (this.pdata_dpr[(this.pdata_dpr.length)-1]));
                                 }
                             }
 
