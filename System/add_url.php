@@ -4,7 +4,6 @@
             <p>Please enter your server to continue to the notify.</p>
             <label for="name">server:</label><span><input type="text" name="url" placeholder="url server" class="required" role="input" aria-required="true"/></span>
             <input  class="submit .transparentButton" value="Next" type="submit" name="Submit"/> 
-
     </ul>
     <br/>
     </fieldset>
