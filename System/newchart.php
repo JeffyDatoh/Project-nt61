@@ -27,7 +27,7 @@
     }
 </style>
 <body>
-    <?php require 'notify.php';?>
+   <?php //require 'notify.php';?>
     <div id="app" class="container">
         <center><div>
             {{message}}
@@ -773,33 +773,33 @@
                             document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
                             
                         //**** alert ****
-                        
+                        //message = "Accesses เกินค่าที่กำหนดไว้";
                         if(avg_ta < single_ta){   
-                            function_alert();
+                            message = "Accesses เกินค่าที่กำหนดไว้";
                             alert("Accesses เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_tk < single_tk){   
-                            function_alert();
+                            //
                             alert("KByte เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_cpus < this.data_cpus){   
-                            function_alert();
+                            //
                             alert("CPU System เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_cpul + 0.01 < this.data_cpul || avg_cpul + 0.02 < this.data_cpul){
-                            function_alert();
+                            //
                             alert("CPU Load เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_rps + 0.03 < this.data_rps || avg_rps + 0.04 < this.data_rps){ 
-                            function_alert();
+                            //
                             alert("Require Per Second เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_bps + 200 < this.data_bps || avg_bps + 300 < this.data_bps){ 
-                            function_alert();
+                            //
                             alert("Byptes Per Second เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_dpr + 25 < this.data_dpr || avg_dpr + 50 < this.data_dpr){
-                            function_alert();
+                            //
                             alert("Duration Per Require เกินค่าที่กำหนดไว้"); 
                         }
 
