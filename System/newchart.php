@@ -653,22 +653,26 @@
                         
                     // ***** average data *****
 
-                        // ***** average data Total_Accesses *****
-                        var total_ta = 0,
+                         // ***** average data Total_Accesses *****
+                         var total_ta = 0,
+                            single_ta = 0,
                             length_ta = this.data_ta.length;
 
                         for (var i = 0; i < length_ta; i++) {
-                            total_ta += parseFloat(this.data_ta[i]);
+                            single_ta = parseFloat(this.data_ta[i-1] - this.data_ta[i]);
+                            total_ta += sing_ta;
                         }
                         avg_ta = total_ta / ((length_ta)-1);
 
 
                         // ***** average data Total_kBytes *****
                         var total_tk = 0,
+                            single_tk = 0,
                             length_tk = this.data_tk.length;
 
                         for (var i = 0; i < length_tk; i++) {
-                            total_tk += parseFloat(this.data_tk[i]);
+                            single_tk = parseFloat(this.data_tk[i-1] - this.data_tk[i]);
+                            total_tk += single_tk;
                         }
                         avg_tk = total_tk / ((length_tk)-1);
 
@@ -745,7 +749,9 @@
                         //**** Set ID****
                             //**** Data ****
                             document.getElementById("data_ta").innerHTML = "Total Accesses : "+data_ta;
+                            document.getElementById("data_ta").innerHTML = "Accesses : "+single_ta;
                             document.getElementById("data_tk").innerHTML = "Total kBytes : "+data_tk;
+                            document.getElementById("data_tk").innerHTML = "kBytes : "+single_tk;
                             document.getElementById("data_cpus").innerHTML = "CPU System : "+data_cpus;
                             document.getElementById("data_cpul").innerHTML = "CPU Load : "+data_cpul;
                             document.getElementById("data_ut").innerHTML = "Uptime : "+data_ut;
@@ -754,8 +760,8 @@
                             document.getElementById("data_bpr").innerHTML = "Byptes Per Require : "+data_bpr;
                             document.getElementById("data_dpr").innerHTML = "Duration Per Require : "+data_dpr;
                             //**** AVG ****
-                            document.getElementById("avg_ta").innerHTML = "Average Total Accesses : "+avg_ta;
-                            document.getElementById("avg_tk").innerHTML = "Average Total kBytes : "+avg_tk;
+                            document.getElementById("avg_ta").innerHTML = "Average Accesses : "+avg_ta;
+                            document.getElementById("avg_tk").innerHTML = "Average kBytes : "+avg_tk;
                             document.getElementById("avg_cpus").innerHTML = "Average CPU System : "+avg_cpus;
                             document.getElementById("avg_cpl").innerHTML = "Average CPU Load : "+avg_cpl;
                             document.getElementById("avg_ut").innerHTML = "Average Uptime : "+avg_ut;
@@ -766,7 +772,14 @@
                             
                         //**** alert ****
                    
-                        /*
+                        if(avg_ta < single_ta){   
+                            function_alert();
+                            echo 'alert("Accesses เกินค่าที่กำหนดไว้")'; 
+                        }
+                        if(avg_tk < single_tk){   
+                            function_alert();
+                            echo 'alert("KByte เกินค่าที่กำหนดไว้")'; 
+                        }
                         if(avg_cpus < total_cpus){   
                             function_alert();
                             echo 'alert("CPU System เกินค่าที่กำหนดไว้")'; 
@@ -782,11 +795,11 @@
                         if(avg_bps + 200 < total_bps || avg_bps + 300 < total_bps){ 
                             function_alert();
                             echo 'alert("Byptes Per Second เกินค่าที่กำหนดไว้")'; 
-                        }*//*
+                        }
                         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr){
                             function_alert();
                             echo 'alert("Duration Per Require เกินค่าที่กำหนดไว้")'; 
-                        }*/
+                        }
 
                         //**** show data ****
                         console.log('data_ta', this.data_ta)
