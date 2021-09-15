@@ -63,6 +63,8 @@
             <div class="item">
                 <p id="data_ta"></p>
                 <p id="data_tk"></p>
+                <p id="data_ta_r"></p>
+                <p id="data_tk_r"></p>
                 <p id="data_cpus"></p>
                 <p id="data_cpul"></p>
                 <p id="data_ut"></p>
@@ -749,9 +751,9 @@
                         //**** Set ID****
                             //**** Data ****
                             document.getElementById("data_ta").innerHTML = "Total Accesses : "+data_ta;
-                            document.getElementById("data_ta").innerHTML = "Accesses : "+single_ta;
+                            document.getElementById("data_ta_r").innerHTML = "Accesses : "+single_ta;
                             document.getElementById("data_tk").innerHTML = "Total kBytes : "+data_tk;
-                            document.getElementById("data_tk").innerHTML = "kBytes : "+single_tk;
+                            document.getElementById("data_tk_r").innerHTML = "kBytes : "+single_tk;
                             document.getElementById("data_cpus").innerHTML = "CPU System : "+data_cpus;
                             document.getElementById("data_cpul").innerHTML = "CPU Load : "+data_cpul;
                             document.getElementById("data_ut").innerHTML = "Uptime : "+data_ut;
@@ -771,7 +773,7 @@
                             document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
                             
                         //**** alert ****
-                   
+/*                   
                         if(avg_ta < single_ta){   
                             function_alert();
                             echo 'alert("Accesses เกินค่าที่กำหนดไว้")'; 
@@ -799,7 +801,7 @@
                         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr){
                             function_alert();
                             echo 'alert("Duration Per Require เกินค่าที่กำหนดไว้")'; 
-                        }
+                        }*/
 
                         //**** show data ****
                         console.log('data_ta', this.data_ta)
