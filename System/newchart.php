@@ -29,9 +29,9 @@
 <body>
     <?php require 'notify.php';?>
     <div id="app" class="container">
-        <div>
+        <center><div>
             {{message}}
-        </div>
+        </div></center>
         <div class="layout">
             <div class="items">
                 <chart_ta :data_ta="data_ta" />
