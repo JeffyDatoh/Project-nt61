@@ -773,34 +773,34 @@
                             document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
                             
                         //**** alert ****
-/*                   
+                  /*
                         if(avg_ta < single_ta){   
                             function_alert();
-                            echo 'alert("Accesses เกินค่าที่กำหนดไว้")'; 
+                            alert("Accesses เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_tk < single_tk){   
                             function_alert();
-                            echo 'alert("KByte เกินค่าที่กำหนดไว้")'; 
+                            alert("KByte เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_cpus < total_cpus){   
                             function_alert();
-                            echo 'alert("CPU System เกินค่าที่กำหนดไว้")'; 
+                            alert("CPU System เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_cpul + 0.01 < total_cpul || avg_cpul + 0.02 < total_cpul){
                             function_alert();
-                            echo 'alert("CPU Load เกินค่าที่กำหนดไว้")'; 
+                            alert("CPU Load เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_rps + 0.03 < total_rps || avg_rps + 0.04 < total_rps){ 
                             function_alert();
-                            echo 'alert("Require Per Second เกินค่าที่กำหนดไว้")'; 
+                            alert("Require Per Second เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_bps + 200 < total_bps || avg_bps + 300 < total_bps){ 
                             function_alert();
-                            echo 'alert("Byptes Per Second เกินค่าที่กำหนดไว้")'; 
+                            alert("Byptes Per Second เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr){
                             function_alert();
-                            echo 'alert("Duration Per Require เกินค่าที่กำหนดไว้")'; 
+                            alert("Duration Per Require เกินค่าที่กำหนดไว้"); 
                         }*/
 
                         //**** show data ****
