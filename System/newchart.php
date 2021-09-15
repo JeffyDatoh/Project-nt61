@@ -767,38 +767,22 @@
                         //**** alert ****
                    
                         /*
-                        if(avg_ta + 25 < total_ta  || avg_ta + 50 < total_ta){ 
-                            function_alert();
-                            echo 'alert("Total Accesses เกินค่าที่กำหนดไว้")'; 
-                        }
-                        if(avg_tk + 25 < total_tk  || avg_tk + 50 < total_tk){
-                            function_alert();
-                            echo 'alert("Total kBytes เกินค่าที่กำหนดไว้")'; 
-                        }
-                        if(avg_cpus + 25 < total_cpus || avg_cpus + 50 < total_cpus){   
+                        if(avg_cpus < total_cpus){   
                             function_alert();
                             echo 'alert("CPU System เกินค่าที่กำหนดไว้")'; 
                         }
-                        if(avg_cpul + 25 < total_cpul || avg_cpul + 50 < total_cpul){
+                        if(avg_cpul + 0.01 < total_cpul || avg_cpul + 0.02 < total_cpul){
                             function_alert();
                             echo 'alert("CPU Load เกินค่าที่กำหนดไว้")'; 
                         }
-                        /*if(avg_ut + 25 < total_ut || avg_ut + 50 < total_ut){
-                            function_alert();
-                            echo 'alert("Uptime เกินค่าที่กำหนดไว้")'; 
-                        }*//*
-                        if(avg_rps + 25 < total_rps || avg_rps + 50 < total_rps){ 
+                        if(avg_rps + 0.03 < total_rps || avg_rps + 0.04 < total_rps){ 
                             function_alert();
                             echo 'alert("Require Per Second เกินค่าที่กำหนดไว้")'; 
                         }
-                        if(avg_bps + 25 < total_bps || avg_bps + 50 < total_bps){ 
+                        if(avg_bps + 200 < total_bps || avg_bps + 300 < total_bps){ 
                             function_alert();
                             echo 'alert("Byptes Per Second เกินค่าที่กำหนดไว้")'; 
-                        }
-                        if(avg_bpr + 25 < total_bpr || avg_bpr + 50 < total_bpr){
-                            function_alert();
-                            echo 'alert("Byptes Per Require เกินค่าที่กำหนดไว้")'; 
-                        }
+                        }*//*
                         if(avg_dpr + 25 < total_dpr || avg_dpr + 50 < total_dpr){
                             function_alert();
                             echo 'alert("Duration Per Require เกินค่าที่กำหนดไว้")'; 
