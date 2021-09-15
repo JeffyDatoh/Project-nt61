@@ -773,7 +773,7 @@
                             document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
                             
                         //**** alert ****
-                  /*
+                        /*
                         if(avg_ta < single_ta){   
                             function_alert();
                             alert("Accesses เกินค่าที่กำหนดไว้"); 
