@@ -750,17 +750,17 @@
 
                         //**** Set ID****
                             //**** Data ****
-                            document.getElementById("data_ta").innerHTML = "Total Accesses : "+data_ta;
+                            document.getElementById("data_ta").innerHTML = "Total Accesses : "+this.data_ta;
                             document.getElementById("data_ta_r").innerHTML = "Accesses : "+single_ta;
-                            document.getElementById("data_tk").innerHTML = "Total kBytes : "+data_tk;
+                            document.getElementById("data_tk").innerHTML = "Total kBytes : "+this.data_tk;
                             document.getElementById("data_tk_r").innerHTML = "kBytes : "+single_tk;
-                            document.getElementById("data_cpus").innerHTML = "CPU System : "+data_cpus;
-                            document.getElementById("data_cpul").innerHTML = "CPU Load : "+data_cpul;
-                            document.getElementById("data_ut").innerHTML = "Uptime : "+data_ut;
-                            document.getElementById("data_rps").innerHTML = "Require Per Second : "+data_rps;
-                            document.getElementById("data_bps").innerHTML = "Byptes Per Second : "+data_bps;
-                            document.getElementById("data_bpr").innerHTML = "Byptes Per Require : "+data_bpr;
-                            document.getElementById("data_dpr").innerHTML = "Duration Per Require : "+data_dpr;
+                            document.getElementById("data_cpus").innerHTML = "CPU System : "+this.data_cpus;
+                            document.getElementById("data_cpul").innerHTML = "CPU Load : "+this.data_cpul;
+                            document.getElementById("data_ut").innerHTML = "Uptime : "+this.data_ut;
+                            document.getElementById("data_rps").innerHTML = "Require Per Second : "+this.data_rps;
+                            document.getElementById("data_bps").innerHTML = "Byptes Per Second : "+this.data_bps;
+                            document.getElementById("data_bpr").innerHTML = "Byptes Per Require : "+this.data_bpr;
+                            document.getElementById("data_dpr").innerHTML = "Duration Per Require : "+this.data_dpr;
                             //**** AVG ****
                             document.getElementById("avg_ta").innerHTML = "Average Accesses : "+avg_ta;
                             document.getElementById("avg_tk").innerHTML = "Average kBytes : "+avg_tk;
