@@ -2,12 +2,12 @@
 
     header("Access-Control-Allow-Origin: *");
     header("Content-Type:application/json; charset=UTF-8");
-
-    $url = isset($_POST['url']) ? $_POST['url'] : "";
-
     /*
-    $url = "https://nithi.cs.psu.ac.th/server-status?auto";
+    $url = isset($_POST['url']) ? $_POST['url'] : "";
     */
+    
+    $url = "https://nithi.cs.psu.ac.th/server-status?auto";
+    
 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
