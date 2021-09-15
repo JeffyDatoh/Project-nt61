@@ -660,7 +660,7 @@
 
                         for (var i = 0; i < length_ta; i++) {
                             single_ta = parseFloat(this.data_ta[i-1] - this.data_ta[i]);
-                            total_ta += sing_ta;
+                            total_ta += single_ta;
                         }
                         avg_ta = total_ta / ((length_ta)-1);
 
