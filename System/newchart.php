@@ -655,7 +655,7 @@
                     // ***** average data *****
 
                          // ***** average data Total_Accesses *****
-                         var total_ta = 0,
+                        var total_ta = 0,
                             single_ta = 0,
                             length_ta = this.data_ta.length;
 
