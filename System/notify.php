@@ -1,14 +1,18 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
+header("Content-Type:application/json; charset=UTF-8");
 $curl = curl_init();
 
 // post token and message
-$token = isset($_POST['token']) ? $_POST['token'] : "";
+//$token = isset($_POST['token']) ? $_POST['token'] : "";
+
 $message = isset($_POST['message']) ? $_POST['message'] : "";
+$token = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+
 
 /*
 // token
-$token_test_notify = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+
 $token_test1 = 'SfnqkiB0S7187xvsbdEvwZKfQcNYvcpm603DQhAwxyh';
 
 // message
