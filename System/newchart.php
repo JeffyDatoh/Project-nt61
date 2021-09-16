@@ -655,7 +655,7 @@
                     // ***** average data *****
 
                          // ***** average data Total_Accesses *****
-                        var total_ta = 0,
+                         var total_ta = 0,
                             single_ta = 0,
                             single_ta_0 = 0,
                             single_ta_1 = 0,
@@ -772,7 +772,7 @@
                             document.getElementById("avg_ta").innerHTML = "Average Accesses : "+avg_ta;
                             document.getElementById("avg_tk").innerHTML = "Average kBytes : "+avg_tk;
                             document.getElementById("avg_cpus").innerHTML = "Average CPU System : "+avg_cpus;
-                            document.getElementById("avg_cpl").innerHTML = "Average CPU Load : "+avg_cpl;
+                            document.getElementById("avg_cpl").innerHTML = "Average CPU Load : "+avg_cpul;
                             document.getElementById("avg_ut").innerHTML = "Average Uptime : "+avg_ut;
                             document.getElementById("avg_rps").innerHTML = "Average Require Per Second : "+avg_rps;
                             document.getElementById("avg_bps").innerHTML = "Average Byptes Per Second : "+avg_bps;
