@@ -777,13 +777,13 @@
                             //message = "Accesses เกินค่าที่กำหนดไว้";
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'Accesses เกินค่าที่กำหนดไว้'
+                            message: 'Accesses เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("Accesses เกินค่าที่กำหนดไว้");
                         }
@@ -791,13 +791,13 @@
                             
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'KByte เกินค่าที่กำหนดไว้'
+                            message: 'KByte เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("KByte เกินค่าที่กำหนดไว้");
                         }
@@ -805,13 +805,13 @@
                             //
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'CPU System เกินค่าที่กำหนดไว้'
+                            message: 'CPU System เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             }); 
                             alert("CPU System เกินค่าที่กำหนดไว้");
                         }
@@ -819,13 +819,13 @@
                             //
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'CPU Load เกินค่าที่กำหนดไว้'
+                            message: 'CPU Load เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("CPU Load เกินค่าที่กำหนดไว้");
                         }
@@ -833,13 +833,13 @@
                             //
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'Require Per Second เกินค่าที่กำหนดไว้'
+                            message: 'Require Per Second เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("Require Per Second เกินค่าที่กำหนดไว้");
                         }
@@ -847,13 +847,13 @@
                             //
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'Byptes Per Second เกินค่าที่กำหนดไว้'
+                            message: 'Byptes Per Second เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("Byptes Per Second เกินค่าที่กำหนดไว้");
                         }
@@ -861,13 +861,13 @@
                             //
                             axios.post('notify.php', {
                                 // เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-                                message: 'Duration Per Require เกินค่าที่กำหนดไว้'
+                            message: 'Duration Per Require เกินค่าที่กำหนดไว้'
                             })
                             .then(response => {
-                                console.log("response: ", response);
+                            console.log("response: ", response);
                             })
                             .catch(error => {
-                                console.log(error);
+                            console.log(error);
                             });
                             alert("Duration Per Require เกินค่าที่กำหนดไว้");
                         }
