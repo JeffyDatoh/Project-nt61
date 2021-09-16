@@ -665,7 +665,7 @@
                             single_ta_0 = parseFloat(this.data_ta[i-1]);
                             single_ta_1 = parseFloat(this.data_ta[i]);
                             single_ta = single_ta_0 - single_ta_1;
-                            total_ta += single_ta;
+                            total_ta += parseFloat(this.data_ta[i]);
                         }
                         avg_ta = total_ta / ((length_ta)-1);
 
@@ -681,7 +681,7 @@
                             single_tk_0 = parseFloat(this.data_tk[i-1]);
                             single_tk_1 = parseFloat(this.data_tk[i]);
                             single_tk = single_tk_0 - single_tk_1;
-                            total_tk += single_tk;
+                            total_tk += parseFloat(this.data_tk[i]);
                         }
                         avg_tk = total_tk / ((length_tk)-1);
 
