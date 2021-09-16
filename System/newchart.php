@@ -775,7 +775,7 @@
                         //**** alert ****
                         //message = "Accesses เกินค่าที่กำหนดไว้";
                         if(avg_ta < single_ta){   
-                            message = "Accesses เกินค่าที่กำหนดไว้";
+                            //message = "Accesses เกินค่าที่กำหนดไว้";
                             alert("Accesses เกินค่าที่กำหนดไว้"); 
                         }
                         if(avg_tk < single_tk){   
