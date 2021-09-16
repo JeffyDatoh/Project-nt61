@@ -566,7 +566,7 @@
                                 if(this.data_bps.length == 0){
                                     this.data_bps.push(0);     
                                 }else {
-                                    this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-1]) - (this.pdata_bps[(this.pdata_bps.length)-2]));
+                                    this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-2]) - (this.pdata_bps[(this.pdata_bps.length)-1]));
                                 }
                             }
 
@@ -643,7 +643,7 @@
                             this.data_rps.push((this.pdata_rps[(this.pdata_rps.length)-1]) - (this.pdata_rps[(this.pdata_rps.length)-2]));
 
                             this.pdata_bps.push(Bytes_PerSec);
-                            this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-1]) - (this.pdata_bps[(this.pdata_bps.length)-2]));
+                            this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-2]) - (this.pdata_bps[(this.pdata_bps.length)-1]));
 
                             this.pdata_bpr.push(Bytes_PerReq);
                             this.data_bpr.push((this.pdata_bpr[(this.pdata_bpr.length)-2]) - (this.pdata_bpr[(this.pdata_bpr.length)-1]));
