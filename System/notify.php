@@ -5,8 +5,13 @@ $curl = curl_init();
 
 // post token and message
 //$token = isset($_POST['token']) ? $_POST['token'] : "";
+$json_str = file_get_contents('php://input');
+$json_obj = json_decode($json_str, true);
+$message = $json_obj['message'];
+echo $message;
 
-$message = isset($_POST['message']) ? $_POST['message'] : "";
+
+// เปลี่ยน token
 $token = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
 
 
