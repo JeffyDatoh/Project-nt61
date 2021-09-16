@@ -75,7 +75,7 @@
                 <p id="avg_ta"></p>
                 <p id="avg_tk"></p>
                 <p id="avg_cpus"></p>
-                <p id="avg_cpl"></p>
+                <p id="avg_cpul"></p>
                 <p id="avg_ut"></p>
                 <p id="avg_rps"></p>
                 <p id="avg_bps"></p>
@@ -772,7 +772,7 @@
                             document.getElementById("avg_ta").innerHTML = "Average Accesses : "+avg_ta;
                             document.getElementById("avg_tk").innerHTML = "Average kBytes : "+avg_tk;
                             document.getElementById("avg_cpus").innerHTML = "Average CPU System : "+avg_cpus;
-                            //document.getElementById("avg_cpul").innerHTML = "Average CPU Load : "+avg_cpul;
+                            document.getElementById("avg_cpul").innerHTML = "Average CPU Load : "+avg_cpul;
                             document.getElementById("avg_ut").innerHTML = "Average Uptime : "+avg_ut;
                             document.getElementById("avg_rps").innerHTML = "Average Require Per Second : "+avg_rps;
                             document.getElementById("avg_bps").innerHTML = "Average Byptes Per Second : "+avg_bps;
