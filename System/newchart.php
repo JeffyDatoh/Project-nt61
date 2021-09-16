@@ -695,7 +695,7 @@
                         for (var i = 0; i < length_cpul; i++) {
                             total_cpul += parseFloat(this.data_cpul[i]);
                         }
-                        avg_cpl = total_cpul / ((length_cpul)-1);
+                        avg_cpul = total_cpul / ((length_cpul)-1);
                         
 
                         // ***** average data Uptime *****
