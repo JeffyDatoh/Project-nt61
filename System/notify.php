@@ -12,14 +12,14 @@ echo $message;
 
 
 // เปลี่ยน token
-$token = '7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG';
+$token = 'SfnqkiB0S7187xvsbdEvwZKfQcNYvcpm603DQhAwxyh';
 
 
 /*
 // token
 
 $token_test1 = 'SfnqkiB0S7187xvsbdEvwZKfQcNYvcpm603DQhAwxyh';
-
+7iZD4VDa5Fyh7aJmKTq5VAsQYUDHtSyHFhCuIdtEshG
 // message
 $message_test = 'Hello gg';
 */
