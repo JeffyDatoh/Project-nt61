@@ -51,7 +51,7 @@
           </v-list>
         </v-menu>
       </v-app-bar>
-      
+
       <v-navigation-drawer
         v-model="drawer"
         absolute
@@ -92,8 +92,8 @@
       el: '#app',
       vuetify: new Vuetify(),
       data: () => ({
-    drawer: false,
-    group: null,
+            drawer: false,
+            group: null,
     }),
     })
   </script>
