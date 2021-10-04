@@ -18,7 +18,7 @@
       >
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
   
-        <v-toolbar-title>Web Server</v-toolbar-title>
+        <v-toolbar-title>Web Server Performance Monitoring System</v-toolbar-title>
   
         <v-spacer></v-spacer>
   
