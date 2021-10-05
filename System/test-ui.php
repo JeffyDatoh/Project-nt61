@@ -101,34 +101,40 @@
     </div>
 
     <v-main>
-      <v-card
-      class="mt-4 mx-auto"
-      max-width="600"
+      <v-col
+        v-for="card in 8"
+        :key="card.title"
+        :cols="card.flex"
       >
-      <v-card-text class="pt-0">
-        <div class="container">
-          <div class="layout">
-              <div class="items">
-                  <chart_ta :data_ta="data_ta" />
-              </div>
-          </div>
-        </div>
-        <div class="text-h6 font-weight-light mb-2">
-          Total_Accesses
-        </div>
-        <div class="subheading font-weight-light grey--text">
-          Last Campaign Performance
-        </div>
-        <v-divider class="my-2"></v-divider>
-        <v-icon
-          class="mr-2"
-          small
+        <v-card
+          class="mt-4 mx-auto"
+          max-width="600"
         >
-          mdi-clock
-        </v-icon>
-        <span class="text-caption grey--text font-weight-light">last registration 26 minutes ago</span>
-      </v-card-text>
-    </v-card>
+        <v-card-text class="pt-0">
+          <div class="container">
+            <div class="layout">
+                <div class="items">
+                    <chart_ta :data_ta="data_ta" />
+                </div>
+            </div>
+          </div>
+          <div class="text-h6 font-weight-light mb-2">
+            Total_Accesses
+          </div>
+          <div class="subheading font-weight-light grey--text">
+            Last Campaign Performance
+          </div>
+          <v-divider class="my-2"></v-divider>
+          <v-icon
+            class="mr-2"
+            small
+          >
+            mdi-clock
+          </v-icon>
+            <span class="text-caption grey--text font-weight-light">last registration 26 minutes ago</span>
+        </v-card-text>
+        </v-card>
+      </v-col>
     </v-main>
 
     <v-footer app>
@@ -183,6 +189,45 @@
         template: '<div>{{chartdata}}</div>'
 
     })
+      //component Total_kBytes ********************************************************************
+    Vue.component('chart_tk', {
+        extends: VueChartJs.Line,
+        props: {
+            data_tk: {
+                type: Array,
+            },
+        },
+        data() {
+            return {
+                chartdata: {
+                    labels: times,
+                    datasets: [{
+                        label: 'Total_kBytes',
+                        backgroundColor: '#f87979',
+                        data: this.data_tk
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            }
+
+        },
+        methods: {
+            refresh_chart: function() {
+                setInterval(() => {
+                    this.renderChart(this.chartdata, this.options)
+                }, 2000)
+            }
+        },
+        mounted() {
+            this.renderChart(this.chartdata, this.options)
+            this.refresh_chart();
+        },
+        template: '<div>{{chartdata}}</div>'
+
+    })  
   </script>
   <script>
         var times = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
