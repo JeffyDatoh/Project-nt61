@@ -38,12 +38,6 @@
             <div class="items">
                 <chart_tk :data_tk="data_tk" />
             </div>
-            <div class="items">
-                <chart_ta :data_ta="data_ta" />
-            </div>
-            <div class="items">
-                <chart_tk :data_tk="data_tk" />
-            </div>
         </div>
 
 
