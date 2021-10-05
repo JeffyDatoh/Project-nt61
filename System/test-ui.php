@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div id="app">
+<template id="app">
   <v-app id="inspire">
     <div>
       <v-app-bar
@@ -65,25 +65,40 @@
             v-model="group"
             active-class="deep-purple--text text--accent-4"
           >
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Home</v-list-item-title>
-            </v-list-item>
-  
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Account</v-list-item-title>
-            </v-list-item>
+          <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+          >
+            <v-list-item-icon>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
     </div>
+
+    <v-main>
+
+      <!-- Provides the application the proper gutter -->
+      <v-container fluid>
+
+        <!-- If using vue-router -->
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+
+    <v-footer app>
+        <!-- -->
+    </v-footer>
   </v-app>
-</div>
+</template>
+
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
@@ -94,6 +109,10 @@
       data: () => ({
             drawer: false,
             group: null,
+            items: [
+              { title: 'Home', icon: 'mdi-home', to:'/'},
+              { title: 'Account', icon: 'mdi-account', to:'/account'}
+            ],
     }),
     })
   </script>
