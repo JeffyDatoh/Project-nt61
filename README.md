@@ -9,7 +9,8 @@ Com-Sci Proeject NT071-608
 
 ## Index
 - หน้า index &#10060; ไฟล์ newchart.php
-
+- หน้า ui &#10060; ไฟล์ test-ui.php
+- ทดสอบ ui ไฟล์ ui2.php
 ## Server
 - ปุ่ม สำหรับใส่ url server &#10004; ไฟล์ add_url.php
 - หน้าเลือก Server &#10060;
