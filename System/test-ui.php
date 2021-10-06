@@ -101,6 +101,8 @@
     </div>
 
     <v-main>
+    <v-col>
+      
         <v-card
           class="mt-4 mx-auto"
           max-width="600"
