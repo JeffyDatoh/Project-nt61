@@ -101,11 +101,6 @@
     </div>
 
     <v-main>
-      <v-col
-        v-for="card in 8"
-        :key="card.title"
-        :cols="card.flex"
-      >
         <v-card
           class="mt-4 mx-auto"
           max-width="600"
