@@ -6,74 +6,122 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
-<style>
-    .container{
-        width: 1224px;
-        margin: 0 auto;
-    }
-    .layout{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    .items{
-        width: 500px;
-    }
-</style>
+
 
 <body>
 <div id="app">
   <v-app id="inspire">
-    <div>
-      <v-container
-        v-for="align in alignments"
-        :key="align"
-        class="grey lighten-5 mb-6"
+    <v-card
+      max-width="400"
+      class="mx-auto"
+    >
+      <v-system-bar
+        color="pink darken-2"
+        dark
       >
-        <v-row
-          :align="align"
-          no-gutters
-          style="height: 150px;"
-        >
-          <v-col
-            v-for="n in 3"
-            :key="n"
-          >
-            <v-card
-              class="pa-2"
-              outlined
-              tile
-            >
-              One of three columns
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+        <v-spacer></v-spacer>
   
-      <v-container class="grey lighten-5">
-        <v-row
-          no-gutters
-          style="height: 150px;"
-        >
+        <v-icon>mdi-window-minimize</v-icon>
+  
+        <v-icon>mdi-window-maximize</v-icon>
+  
+        <v-icon>mdi-close</v-icon>
+      </v-system-bar>
+  
+      <v-app-bar
+        dark
+        color="pink"
+      >
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  
+        <v-toolbar-title>My Music</v-toolbar-title>
+  
+        <v-spacer></v-spacer>
+  
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+      </v-app-bar>
+  
+      <v-container>
+        <v-row dense>
+          <v-col cols="12">
+            <v-card
+              color="#385F73"
+              dark
+            >
+              <v-card-title class="text-h5">
+                Unlimited music now
+              </v-card-title>
+  
+              <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+  
+              <v-card-actions>
+                <v-btn text>
+                  Listen Now
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+  
           <v-col
-            v-for="align in alignments"
-            :key="align"
-            :align-self="align"
+            v-for="(item, i) in items"
+            :key="i"
+            cols="12"
           >
             <v-card
-              class="pa-2"
-              outlined
-              tile
+              :color="item.color"
+              dark
             >
-              One of three columns
+              <div class="d-flex flex-no-wrap justify-space-between">
+                <div>
+                  <v-card-title
+                    class="text-h5"
+                    v-text="item.title"
+                  ></v-card-title>
+  
+                  <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+  
+                  <v-card-actions>
+                    <v-btn
+                      v-if="item.artist === 'Ellie Goulding'"
+                      class="ml-2 mt-3"
+                      fab
+                      icon
+                      height="40px"
+                      right
+                      width="40px"
+                    >
+                      <v-icon>mdi-play</v-icon>
+                    </v-btn>
+  
+                    <v-btn
+                      v-else
+                      class="ml-2 mt-5"
+                      outlined
+                      rounded
+                      small
+                    >
+                      START RADIO
+                    </v-btn>
+                  </v-card-actions>
+                </div>
+  
+                <v-avatar
+                  class="ma-3"
+                  size="125"
+                  tile
+                >
+                  <v-img :src="item.src"></v-img>
+                </v-avatar>
+              </div>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
-    </div>
+    </v-card>
   </v-app>
 </div>
-
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -215,10 +263,19 @@
             ],
             data_ta: [],
             data_tk: [],
-            alignments: [
-              'start',
-              'center',
-              'end',
+            items: [
+              {
+                color: '#1F7087',
+                src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+                title: 'Supermodel',
+                artist: 'Foster the People',
+              },
+              {
+                color: '#952175',
+                src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+                title: 'Halcyon Days',
+                artist: 'Ellie Goulding',
+              },
             ],
     }),
       methods: {

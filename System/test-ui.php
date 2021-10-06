@@ -101,8 +101,6 @@
     </div>
 
     <v-main>
-    <v-col>
-      
         <v-card
           class="mt-4 mx-auto"
           max-width="600"
@@ -115,8 +113,37 @@
                 </div>
             </div>
           </div>
+          <v-card-title>
+            Total Accesses
+          </v-card-title>
+          <v-card-subtitle>
+            Last Campaign Performance
+          </v-card-subtitle>
+          <v-divider class="my-2"></v-divider>
+          <v-icon
+            class="mr-2"
+            small
+          >
+            mdi-clock
+          </v-icon>
+            <span class="text-caption grey--text font-weight-light">last registration 26 minutes ago</span>
+        </v-card-text>
+        </v-card>
+
+        <v-card
+          class="mt-4 mx-auto"
+          max-width="600"
+        >
+        <v-card-text class="pt-0">
+          <div class="container">
+            <div class="layout">
+                <div class="items">
+                    <chart_tk :data_tk="data_tk" />
+                </div>
+            </div>
+          </div>
           <div class="text-h6 font-weight-light mb-2">
-            Total_Accesses
+            Total kBytes
           </div>
           <div class="subheading font-weight-light grey--text">
             Last Campaign Performance
@@ -131,7 +158,6 @@
             <span class="text-caption grey--text font-weight-light">last registration 26 minutes ago</span>
         </v-card-text>
         </v-card>
-      </v-col>
     </v-main>
 
     <v-footer app>
