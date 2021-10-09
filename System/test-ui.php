@@ -102,7 +102,7 @@
 
     <v-main>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="6">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -132,7 +132,7 @@
           </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="6">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
