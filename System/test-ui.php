@@ -102,10 +102,13 @@
 
     <v-main class="blue-grey lighten-4">
       <v-row>
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-sheet
             class="v-sheet--offset mx-auto"
@@ -113,7 +116,7 @@
             elevation="12"
             max-width="calc(100% - 32px)"
           >
-            <v-card-text class="pt-0">
+            <v-responsive class="pt-3">
               <div class="container">
                   <div class="layout">
                       <div class="items">
@@ -121,7 +124,7 @@
                       </div>
                   </div>
                 </div>
-            </v-card-text>
+            </v-responsive>
           </v-sheet>
           <v-card-text class="pt-0">
             <v-card-title>
@@ -142,43 +145,58 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
-                  <div class="items">
-                      <chart_tk :data_tk="data_tk" />
-                  </div>
-              </div>
-            </div>
-            <div class="title font-weight-medium mb-2">
-              Total kBytes
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
+            <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
             >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                      <div class="items">
+                          <chart_tk :data_tk="data_tk" />
+                      </div>
+                  </div>
+                </div>
+              </v-responsive>
+            </v-sheet>
+              <v-card-text class="pt-0">
+                <div class="title font-weight-medium mb-2">
+                  Total kBytes
+                </div>
+                <div class="subheading font-weight-light grey--text">
+                  Last Campaign Performance
+                </div>
+                <v-divider class="my-2"></v-divider>
+                <v-icon
+                  class="mr-2"
+                  small
+                >
+                  mdi-clock
+                </v-icon>
+                  <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+              </v-card-text>
           </v-card>
         </v-col>
 
 
 
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -207,10 +225,13 @@
         </v-col>
 
 
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -239,10 +260,13 @@
         </v-col>
 
 
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -270,10 +294,14 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
+
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -301,10 +329,13 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -332,10 +363,14 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
+
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
@@ -363,10 +398,14 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
+
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
           <v-card
             class="mt-4 mx-auto"
-            max-width="600"
+            max-width="400"
           >
           <v-card-text class="pt-0">
             <div class="container">
