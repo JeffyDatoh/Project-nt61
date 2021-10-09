@@ -18,7 +18,7 @@
         gap: 2rem;
     }
     .items{
-        width: 500px;
+        width: 350px;
     }
 </style>
 
@@ -102,7 +102,7 @@
 
     <v-main class="blue-grey lighten-4">
       <v-row>
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -142,7 +142,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -175,7 +175,7 @@
 
 
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -207,7 +207,7 @@
         </v-col>
 
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -239,7 +239,7 @@
         </v-col>
 
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -270,7 +270,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -301,7 +301,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -332,7 +332,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
@@ -363,7 +363,7 @@
           </v-card>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="4">
           <v-card
             class="mt-4 mx-auto"
             max-width="600"
