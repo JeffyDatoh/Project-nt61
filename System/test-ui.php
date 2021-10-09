@@ -107,20 +107,29 @@
             class="mt-4 mx-auto"
             max-width="600"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
-                  <div class="items">
-                      <chart_ta :data_ta="data_ta" />
+          <v-sheet
+            class="v-sheet--offset mx-auto"
+            color="grey"
+            elevation="12"
+            max-width="calc(100% - 32px)"
+          >
+            <v-card-text class="pt-0">
+              <div class="container">
+                  <div class="layout">
+                      <div class="items">
+                          <chart_ta :data_ta="data_ta" />
+                      </div>
                   </div>
-              </div>
-            </div>
-            <div class="title font-weight-medium mb-2">
-              Total Accesses
-            </div>
-            <div class="subheading font-weight-light grey--text">
+                </div>
+            </v-card-text>
+          </v-sheet>
+          <v-card-text class="pt-0">
+            <v-card-title>
+            Total Accesses
+            </v-card-title>
+            <v-card-subtitle>
               Last Campaign Performance
-            </div>
+            </v-card-subtitle>
             <v-divider class="my-2"></v-divider>
             <v-icon
               class="mr-2"
@@ -129,7 +138,7 @@
               mdi-clock
             </v-icon>
               <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+          </v-card-text> 
           </v-card>
         </v-col>
 
