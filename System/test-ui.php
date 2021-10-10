@@ -206,6 +206,8 @@
                   </div>
               </div>
             </div>
+          </v-card-text>
+          <v-card-text>
             <div class="title font-weight-medium mb-2">
               CPU System
             </div>
