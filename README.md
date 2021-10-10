@@ -32,7 +32,7 @@ Com-Sci Proeject NT071-608
 ## Notify
 - test to line notify &#10004;      ไฟล์ notify.php
 - ปุ่ม สำหรับ ใส่ message and token &#10004;        ไฟล์ add_token.php
-- Alert to line notify &#10060;
+- Alert to line notify &#10004;
 
 ## เอกสารที่ต้องส่ง
 - Report &#10060;
