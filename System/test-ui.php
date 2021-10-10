@@ -162,29 +162,29 @@
               <v-responsive class="pt-3">
                 <div class="container">
                   <div class="layout">
-                      <div class="items">
-                          <chart_tk :data_tk="data_tk" />
-                      </div>
+                    <div class="items">
+                      <chart_tk :data_tk="data_tk" />
+                    </div>
                   </div>
                 </div>
               </v-responsive>
             </v-sheet>
-              <v-card-text class="pt-0">
-                <div class="title font-weight-medium mb-2">
-                  Total kBytes
-                </div>
-                <div class="subheading font-weight-light grey--text">
-                  Last Campaign Performance
-                </div>
-                <v-divider class="my-2"></v-divider>
-                <v-icon
-                  class="mr-2"
-                  small
-                >
-                  mdi-clock
-                </v-icon>
-                  <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-              </v-card-text>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Total kBytes
+              </div>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -207,9 +207,9 @@
             <v-responsive class="pt-3">
               <div class="container">
                 <div class="layout">
-                    <div class="items">
+                  <div class="items">
                     <chart_cpus :data_cpus="data_cpus" />
-                    </div>
+                  </div>
                 </div>
               </div>
             </v-responsive>
@@ -242,14 +242,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_cpul :data_cpul="data_cpul" />
+                    <chart_cpul :data_cpul="data_cpul" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               CPU Load
             </div>
@@ -277,14 +286,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_ut :data_ut="data_ut" />
+                    <chart_ut :data_ut="data_ut" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               Uptimes
             </div>
@@ -312,16 +330,25 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_rps :data_rps="data_rps" />
+                    <chart_rps :data_rps="data_rps" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
-              Requestt per second
+              Request per second
             </div>
             <div class="subheading font-weight-light grey--text">
               Last Campaign Performance
@@ -346,14 +373,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_bps :data_bps="data_bps" />
+                    <chart_bps :data_bps="data_bps" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               Bytes per Second
             </div>
@@ -381,14 +417,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_bpr :data_bpr="data_bpr" />
+                    <chart_bpr :data_bpr="data_bpr" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               Bytes per Request
             </div>
@@ -416,14 +461,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
                   <div class="items">
-                  <chart_dpr :data_dpr="data_dpr" />
+                    <chart_dpr :data_dpr="data_dpr" />
                   </div>
+                </div>
               </div>
-            </div>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               Duration Per Request
             </div>
