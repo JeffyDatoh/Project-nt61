@@ -1053,7 +1053,6 @@
     }),
     methods: {
       getData: function() {
-          setInterval(() => {
               axios.get("data.php").then((response) => {
 
                   console.log('Total_Accesses:', response.data.Total_Accesses);
@@ -1542,11 +1541,13 @@
                   console.log('avg ta: ',avg_ta)
 
               }).catch((err) => console.log(err));
-          }, 60000*5); // 60000 =  60 วินาที
         }
     },
     mounted() {
-        this.getData()
+      this.getData()
+      setInterval(() => {
+          this.getData()
+      }, 60000*5); // 60000 =  60 วินาที
     }
     
   })
