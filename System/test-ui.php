@@ -9,9 +9,9 @@
 
 <style>
     .layout{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .items{
         width: 100%;
