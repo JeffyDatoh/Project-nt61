@@ -198,16 +198,23 @@
             class="mt-4 mx-auto"
             max-width="400"
           >
-          <v-card-text class="pt-0">
-            <div class="container">
-              <div class="layout">
-                  <div class="items">
-                  <chart_cpus :data_cpus="data_cpus" />
-                  </div>
+          <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="grey"
+              elevation="12"
+              max-width="calc(100% - 32px)"
+            >
+            <v-responsive class="pt-3">
+              <div class="container">
+                <div class="layout">
+                    <div class="items">
+                    <chart_cpus :data_cpus="data_cpus" />
+                    </div>
+                </div>
               </div>
-            </div>
-          </v-card-text>
-          <v-card-text>
+            </v-responsive>
+          </v-sheet>
+          <v-card-text class="pt-0">
             <div class="title font-weight-medium mb-2">
               CPU System
             </div>
