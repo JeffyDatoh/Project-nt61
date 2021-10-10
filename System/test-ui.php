@@ -18,7 +18,8 @@
         gap: 2rem;
     }
     .items{
-        width: 320px;
+        width: 310px;
+        height: 200px;
     }
 </style>
 
@@ -138,40 +139,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-            class="v-sheet--offset mx-auto"
-            color="#E91E63"
-            elevation="12"
-            max-width="calc(100% - 32px)"
-          >
-            <v-responsive class="pt-3">
-              <div class="container">
-                  <div class="layout">
-                      <div class="items">
-                          <chart_ta :data_ta="data_ta" />
-                      </div>
-                  </div>
-                </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Total Accesses
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
+            <v-sheet
+              class="v-sheet--offset mx-auto"
+              color="#E91E63"
+              elevation="12"
+              max-width="calc(100% - 32px)"
             >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text> 
+              <v-responsive class="pt-3">
+                <div class="container">
+                    <div class="layout">
+                        <div class="items">
+                            <chart_ta :data_ta="data_ta" />
+                        </div>
+                    </div>
+                  </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Total Accesses
+              </div>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text> 
           </v-card>
         </v-col>
 
@@ -181,7 +182,7 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
             <v-sheet
               class="v-sheet--offset mx-auto"
@@ -226,40 +227,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="info"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_cpus :data_cpus="data_cpus" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="info"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_cpus :data_cpus="data_cpus" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                CPU System
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              CPU System
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -270,40 +271,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="#E91E63"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_cpul :data_cpul="data_cpul" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="#E91E63"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_cpul :data_cpul="data_cpul" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                CPU Load
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              CPU Load
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -314,40 +315,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="success"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_ut :data_ut="data_ut" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="success"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_ut :data_ut="data_ut" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Uptimes
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Uptimes
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -358,40 +359,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="info"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_rps :data_rps="data_rps" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="info"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_rps :data_rps="data_rps" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Request per second
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Request per second
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -401,84 +402,40 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="#E91E63"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_bps :data_bps="data_bps" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="#E91E63"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_bps :data_bps="data_bps" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Bytes per Second
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Bytes per Second
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
-          </v-card>
-        </v-col>
-
-
-        <v-col 
-          cols="12"
-          lg= "4"
-        >
-          <v-card
-            class="mt-4 mx-auto"
-            max-width="400"
-          >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="success"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_bpr :data_bpr="data_bpr" />
-                  </div>
-                </div>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Bytes per Request
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -489,40 +446,84 @@
         >
           <v-card
             class="mt-4 mx-auto"
-            max-width="400"
+            max-width="350"
           >
-          <v-sheet
-              class="v-sheet--offset mx-auto"
-              color="info"
-              elevation="12"
-              max-width="calc(100% - 32px)"
-            >
-            <v-responsive class="pt-3">
-              <div class="container">
-                <div class="layout">
-                  <div class="items">
-                    <chart_dpr :data_dpr="data_dpr" />
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="success"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_bpr :data_bpr="data_bpr" />
+                    </div>
                   </div>
                 </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Bytes per Request
               </div>
-            </v-responsive>
-          </v-sheet>
-          <v-card-text class="pt-0">
-            <div class="title font-weight-medium mb-2">
-              Duration Per Request
-            </div>
-            <div class="subheading font-weight-light grey--text">
-              Last Campaign Performance
-            </div>
-            <v-divider class="my-2"></v-divider>
-            <v-icon
-              class="mr-2"
-              small
-            >
-              mdi-clock
-            </v-icon>
-              <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
-          </v-card-text>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
+        <v-col 
+          cols="12"
+          lg= "4"
+        >
+          <v-card
+            class="mt-4 mx-auto"
+            max-width="350"
+          >
+            <v-sheet
+                class="v-sheet--offset mx-auto"
+                color="info"
+                elevation="12"
+                max-width="calc(100% - 32px)"
+              >
+              <v-responsive class="pt-3">
+                <div class="container">
+                  <div class="layout">
+                    <div class="items">
+                      <chart_dpr :data_dpr="data_dpr" />
+                    </div>
+                  </div>
+                </div>
+              </v-responsive>
+            </v-sheet>
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Duration Per Request
+              </div>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+              <v-divider class="my-2"></v-divider>
+              <v-icon
+                class="mr-2"
+                small
+              >
+                mdi-clock
+              </v-icon>
+                <span class="text-caption grey--text font-weight-light">last registration 5 minutes ago</span>
+            </v-card-text>
           </v-card>
         </v-col>
 
