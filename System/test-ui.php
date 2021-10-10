@@ -1336,31 +1336,6 @@
 							}
 							avg_dpr = total_dpr / ((length_dpr)-1);
 								
-							//**** Set ID****
-									//**** Data ****
-									document.getElementById("data_ta").innerHTML = "Total Accesses : "+this.data_ta;
-									document.getElementById("data_ta_r").innerHTML = "Accesses : "+single_ta;
-									document.getElementById("data_tk").innerHTML = "Total kBytes : "+this.data_tk;
-									document.getElementById("data_tk_r").innerHTML = "kBytes : "+single_tk;
-									document.getElementById("data_cpus").innerHTML = "CPU System : "+this.data_cpus;
-									document.getElementById("data_cpul").innerHTML = "CPU Load : "+this.data_cpul;
-									document.getElementById("data_ut").innerHTML = "Uptime : "+this.data_ut;
-									document.getElementById("data_rps").innerHTML = "Require Per Second : "+this.data_rps;
-									document.getElementById("data_bps").innerHTML = "Byptes Per Second : "+this.data_bps;
-									document.getElementById("data_bpr").innerHTML = "Byptes Per Require : "+this.data_bpr;
-									document.getElementById("data_dpr").innerHTML = "Duration Per Require : "+this.data_dpr;
-									//**** AVG ****
-									document.getElementById("avg_ta").innerHTML = "Average Accesses : "+avg_ta;
-									document.getElementById("avg_tk").innerHTML = "Average kBytes : "+avg_tk;
-									document.getElementById("avg_cpus").innerHTML = "Average CPU System : "+avg_cpus;
-									document.getElementById("avg_cpl").innerHTML = "Average CPU Load : "+avg_cpul;
-									document.getElementById("avg_ut").innerHTML = "Average Uptime : "+avg_ut;
-									document.getElementById("avg_rps").innerHTML = "Average Require Per Second : "+avg_rps;
-									document.getElementById("avg_bps").innerHTML = "Average Byptes Per Second : "+avg_bps;
-									document.getElementById("avg_bpr").innerHTML = "Average Byptes Per Require : "+avg_bpr;
-									document.getElementById("avg_dpr").innerHTML = "Average Duration Per Require : "+avg_dpr;
-									
-								
 
 							//**** alert ****
 							//message = "Accesses เกินค่าที่กำหนดไว้";
