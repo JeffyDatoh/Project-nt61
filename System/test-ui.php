@@ -18,7 +18,7 @@
         gap: 2rem;
     }
     .items{
-        width: 350px;
+        width: 320px;
     }
 </style>
 
@@ -274,7 +274,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="#E91E63"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -318,7 +318,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="success"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -362,7 +362,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="info"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -405,7 +405,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="#E91E63"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -449,7 +449,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="success"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -493,7 +493,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="info"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -558,7 +558,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Total_Accesses',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_ta
                     }]
                 },
@@ -612,7 +612,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Total_kBytes',
-                        backgroundColor: 'white',
+                        backgroundColor: '#FFFF',
                         data: this.data_tk
                     }]
                 },
@@ -666,7 +666,7 @@
                     labels: times,
                     datasets: [{
                         label: 'CPU_System',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_cpus
                     }]
                 },
@@ -722,7 +722,7 @@
                     labels: times,
                     datasets: [{
                         label: 'CPU_Load',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_cpul
                     }]
                 },
@@ -778,7 +778,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Uptime',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_ut
                     }]
                 },
@@ -834,7 +834,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Req_PerSec',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_rps
                     }]
                 },
@@ -890,7 +890,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Bytes_PerSec',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_bps
                     }]
                 },
@@ -946,7 +946,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Bytes_PerReq',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_bpr
                     }]
                 },
@@ -1002,7 +1002,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Duration_PerReq',
-                        backgroundColor: '#f87979',
+                        backgroundColor: '#FFFF',
                         data: this.data_dpr
                     }]
                 },
