@@ -11,6 +11,7 @@ Com-Sci Proeject NT071-608
 - หน้า index &#10060; ไฟล์ newchart.php
 - หน้า ui &#10060; ไฟล์ test-ui.php
 - ทดสอบ ui ไฟล์ ui2.php
+- แสดงค่าไม่สำเร็จ &#10060;
 ## Server
 - ปุ่ม สำหรับใส่ url server &#10004; ไฟล์ add_url.php
 - หน้าเลือก Server &#10060;
@@ -26,7 +27,7 @@ Com-Sci Proeject NT071-608
 
 ## Detect
 - average data &#10004;             ไฟล์ newchart.php
-- detect data แต่ละตัว &#10060; [ทิ้ง]
+- detect data แต่ละตัว &#10004;
 
 ## Notify
 - test to line notify &#10004;      ไฟล์ notify.php
