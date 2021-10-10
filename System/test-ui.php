@@ -8,18 +8,15 @@
 </head>
 
 <style>
-    .container{
-        width: 1224px;
-        margin: 0 auto;
-    }
     .layout{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .items{
-        width: 310px;
-        height: 200px;
+        width: 100%;
+        padding: 10px;
+        max-height: 200px;
     }
 </style>
 
@@ -148,13 +145,11 @@
               max-width="calc(100% - 32px)"
             >
               <v-responsive class="pt-3">
-                <div class="container">
-                    <div class="layout">
-                        <div class="items">
-                            <chart_ta :data_ta="data_ta" />
-                        </div>
+                <div class="layout">
+                    <div class="items">
+                        <chart_ta :data_ta="data_ta" />
                     </div>
-                  </div>
+                </div>
               </v-responsive>
             </v-sheet>
             <v-card-text class="pt-0">
@@ -191,11 +186,9 @@
               max-width="calc(100% - 32px)"
             >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_tk :data_tk="data_tk" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_tk :data_tk="data_tk" />
                   </div>
                 </div>
               </v-responsive>
@@ -236,11 +229,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_cpus :data_cpus="data_cpus" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_cpus :data_cpus="data_cpus" />
                   </div>
                 </div>
               </v-responsive>
@@ -280,11 +271,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_cpul :data_cpul="data_cpul" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_cpul :data_cpul="data_cpul" />
                   </div>
                 </div>
               </v-responsive>
@@ -324,11 +313,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_ut :data_ut="data_ut" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_ut :data_ut="data_ut" />
                   </div>
                 </div>
               </v-responsive>
@@ -368,11 +355,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_rps :data_rps="data_rps" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_rps :data_rps="data_rps" />
                   </div>
                 </div>
               </v-responsive>
@@ -411,11 +396,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_bps :data_bps="data_bps" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_bps :data_bps="data_bps" />
                   </div>
                 </div>
               </v-responsive>
@@ -455,11 +438,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_bpr :data_bpr="data_bpr" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_bpr :data_bpr="data_bpr" />
                   </div>
                 </div>
               </v-responsive>
@@ -499,11 +480,9 @@
                 max-width="calc(100% - 32px)"
               >
               <v-responsive class="pt-3">
-                <div class="container">
-                  <div class="layout">
-                    <div class="items">
-                      <chart_dpr :data_dpr="data_dpr" />
-                    </div>
+                <div class="layout">
+                  <div class="items">
+                    <chart_dpr :data_dpr="data_dpr" />
                   </div>
                 </div>
               </v-responsive>
