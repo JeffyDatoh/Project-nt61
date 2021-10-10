@@ -122,7 +122,7 @@
               <div class="headline pink--text text--accent-2">
                   Server
                 <div class="subheading font-weight-light grey--text">
-                  Last Campaign Performance
+                  nithi.cs.psu.ac.th
                 </div>
               </div>
             </v-card-title>
