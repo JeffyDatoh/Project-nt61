@@ -16,7 +16,6 @@
     .items{
         width: 100%;
         padding: 10px;
-        max-height: 200px;
     }
 </style>
 
@@ -539,7 +538,8 @@
                     datasets: [{
                         label: 'Total_Accesses',
                         backgroundColor: '#FFFF',
-                        data: this.data_ta
+                        data: this.data_ta,
+                        borderWidth: 1
                     }]
                 },
                 options: {
