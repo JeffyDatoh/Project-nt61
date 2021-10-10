@@ -118,14 +118,14 @@
             elevation="12"
             max-width="calc(100% - 32px)"
           >
-            <v-card-text class="pt-0">
-              <div class="title font-weight-medium mb-2">
-                Server
+            <v-card-title primary-title class="justify-center">
+              <div class="headline pink--text text--accent-2">
+                  Server
+                <div class="subheading font-weight-light grey--text">
+                  Last Campaign Performance
+                </div>
               </div>
-              <div class="subheading font-weight-light grey--text">
-                Last Campaign Performance
-              </div>
-            </v-card-text>
+            </v-card-title>
           </v-sheet>
           </v-card>
         </v-col>
