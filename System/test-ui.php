@@ -507,6 +507,10 @@
 
       </v-row>
     </v-container>
+
+    <v-footer app>
+        <!-- -->
+    </v-footer>
   </v-app>
 </div>
   
@@ -564,7 +568,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -618,7 +622,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -673,7 +677,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -729,7 +733,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -785,7 +789,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -841,7 +845,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -897,7 +901,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -953,7 +957,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -1009,7 +1013,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 5000)
+                }, 3000)
             }
         },
         mounted() {
@@ -1542,7 +1546,7 @@
                   console.log('avg ta: ',avg_ta)
 
               }).catch((err) => console.log(err));
-          }, 5000); // 60000 =  60 วินาที
+          }, 3000); // 3000 =  3 วินาที
         }
     },
     mounted() {
