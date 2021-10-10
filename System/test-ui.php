@@ -107,6 +107,33 @@
       <v-row>
         <v-col 
           cols="12"
+          lg= "12"
+        >
+          <v-card
+            class="mt-4 mx-auto"
+          >
+          <v-sheet
+            class="v-sheet--offset mx-auto"
+            color="white"
+            elevation="12"
+            max-width="calc(100% - 32px)"
+          >
+            <v-card-text class="pt-0">
+              <div class="title font-weight-medium mb-2">
+                Server
+              </div>
+              <div class="subheading font-weight-light grey--text">
+                Last Campaign Performance
+              </div>
+            </v-card-text>
+          </v-sheet>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col 
+          cols="12"
           lg= "4"
         >
           <v-card
