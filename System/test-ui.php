@@ -100,7 +100,10 @@
       </v-navigation-drawer>
     </div>
 
-    <v-main class="blue-grey lighten-4">
+    <v-container 
+      fluid 
+      class="blue-grey lighten-4"
+    >
       <v-row>
         <v-col 
           cols="12"
@@ -112,7 +115,7 @@
           >
           <v-sheet
             class="v-sheet--offset mx-auto"
-            color="grey"
+            color="#E91E63"
             elevation="12"
             max-width="calc(100% - 32px)"
           >
@@ -127,12 +130,12 @@
             </v-responsive>
           </v-sheet>
           <v-card-text class="pt-0">
-            <v-card-title>
-            Total Accesses
-            </v-card-title>
-            <v-card-subtitle>
+            <div class="title font-weight-medium mb-2">
+              Total Accesses
+            </div>
+            <div class="subheading font-weight-light grey--text">
               Last Campaign Performance
-            </v-card-subtitle>
+            </div>
             <v-divider class="my-2"></v-divider>
             <v-icon
               class="mr-2"
@@ -155,7 +158,7 @@
           >
             <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="success"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -200,7 +203,7 @@
           >
           <v-sheet
               class="v-sheet--offset mx-auto"
-              color="grey"
+              color="info"
               elevation="12"
               max-width="calc(100% - 32px)"
             >
@@ -497,7 +500,7 @@
         </v-col>
 
       </v-row>
-    </v-main>
+    </v-container>
 
     <v-footer app>
         <!-- -->
@@ -537,6 +540,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -569,7 +585,7 @@
                     labels: times,
                     datasets: [{
                         label: 'Total_kBytes',
-                        backgroundColor: '#f87979',
+                        backgroundColor: 'white',
                         data: this.data_tk
                     }]
                 },
@@ -577,11 +593,23 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     legend: {
-                      display: false
-                    }
+                      display: false,
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
+                    } 
                 }
             }
-
         },
         methods: {
             refresh_chart: function() {
@@ -620,6 +648,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -663,6 +704,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -706,6 +760,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -749,6 +816,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -792,6 +872,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -835,6 +928,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
@@ -878,6 +984,19 @@
                     maintainAspectRatio: false,
                     legend: {
                       display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
                     }
                 }
             }
