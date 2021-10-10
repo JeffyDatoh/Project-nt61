@@ -26,7 +26,7 @@ Com-Sci Proeject NT071-608
 
 ## Detect
 - average data &#10004;             ไฟล์ newchart.php
-- detect data แต่ละตัว &#10060;
+- detect data แต่ละตัว &#10060; [ทิ้ง]
 
 ## Notify
 - test to line notify &#10004;      ไฟล์ notify.php
