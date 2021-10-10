@@ -507,10 +507,6 @@
 
       </v-row>
     </v-container>
-
-    <v-footer app>
-        <!-- -->
-    </v-footer>
   </v-app>
 </div>
   
