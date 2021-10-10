@@ -1547,10 +1547,10 @@
         }
     },
     mounted() {
+      this.getData()
+      setInterval(() => {
         this.getData()
-        setInterval(() => {
-          this.getData()
-        }, 5000); // 5000 =  5 วินาที
+      }, 5000); // 5000 =  5 วินาที
     }
     
   })
