@@ -1549,7 +1549,7 @@
     mounted() {
         this.getData()
         setInterval(() => {
-            this.getData()
+          this.getData()
         }, 5000); // 5000 =  5 วินาที
     }
     
