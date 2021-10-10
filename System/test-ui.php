@@ -1083,99 +1083,96 @@
 							//***** update data ******
 							var index = 0;
 							if (this.pdata_ta.length < 13) {
+								//***** push data Total_Accesses*****
+								this.pdata_ta.push(Total_Accesses);
+								if(this.data_ta.length < 13){
+										if(this.data_ta.length == 0){
+												this.data_ta.push(0);     
+										}else {
+												this.data_ta.push((this.pdata_ta[(this.pdata_ta.length)-1]) - (this.pdata_ta[(this.pdata_ta.length)-2]));
+										}
+								}
 
-									//***** push data Total_Accesses*****
-									this.pdata_ta.push(Total_Accesses);
-									if(this.data_ta.length < 13){
-											if(this.data_ta.length == 0){
-													this.data_ta.push(0);     
-											}else {
-													this.data_ta.push((this.pdata_ta[(this.pdata_ta.length)-1]) - (this.pdata_ta[(this.pdata_ta.length)-2]));
-											}
-									}
+								//***** push data Total_kBytes *****
+								this.pdata_tk.push(Total_kBytes);
+								if(this.data_tk.length < 13){
+										if(this.data_tk.length == 0){
+												this.data_tk.push(0);     
+										}else {
+												this.data_tk.push((this.pdata_tk[(this.pdata_tk.length)-1]) - (this.pdata_tk[(this.pdata_tk.length)-2]));
+										}
+								}
 
-									//***** push data Total_kBytes *****
-									this.pdata_tk.push(Total_kBytes);
-									if(this.data_tk.length < 13){
-											if(this.data_tk.length == 0){
-													this.data_tk.push(0);     
-											}else {
-													this.data_tk.push((this.pdata_tk[(this.pdata_tk.length)-1]) - (this.pdata_tk[(this.pdata_tk.length)-2]));
-											}
-									}
+								//***** push data CPU_System *****
+								this.pdata_cpus.push(CPU_System);
+								if(this.data_cpus.length < 13){
+										if(this.data_cpus.length == 0){
+												this.data_cpus.push(0);     
+										}else {
+												this.data_cpus.push((this.pdata_cpus[(this.pdata_cpus.length)-1]) - (this.pdata_cpus[(this.pdata_cpus.length)-2]));
+										}
+								}
 
-									//***** push data CPU_System *****
-									this.pdata_cpus.push(CPU_System);
-									if(this.data_cpus.length < 13){
-											if(this.data_cpus.length == 0){
-													this.data_cpus.push(0);     
-											}else {
-													this.data_cpus.push((this.pdata_cpus[(this.pdata_cpus.length)-1]) - (this.pdata_cpus[(this.pdata_cpus.length)-2]));
-											}
-									}
+								//***** push data CPU_Load *****
+								this.pdata_cpul.push(CPU_Load);
+								if(this.data_cpul.length < 13){
+										if(this.data_cpul.length == 0){
+												this.data_cpul.push(0);     
+										}else {
+												this.data_cpul.push((this.pdata_cpul[(this.pdata_cpul.length)-1]) - (this.pdata_cpul[(this.pdata_cpul.length)-2]));
+										}
+								}
 
-									//***** push data CPU_Load *****
-									this.pdata_cpul.push(CPU_Load);
-									if(this.data_cpul.length < 13){
-											if(this.data_cpul.length == 0){
-													this.data_cpul.push(0);     
-											}else {
-													this.data_cpul.push((this.pdata_cpul[(this.pdata_cpul.length)-1]) - (this.pdata_cpul[(this.pdata_cpul.length)-2]));
-											}
-									}
+								//***** push data Uptime *****
+								this.pdata_ut.push(Uptime);
+								if(this.data_ut.length < 13){
+										if(this.data_ut.length == 0){
+												this.data_ut.push(0);     
+										}else {
+												this.data_ut.push((this.pdata_ut[(this.pdata_ut.length)-1]) - (this.pdata_ut[(this.pdata_ut.length)-2]));
+										}
+								}
 
-									//***** push data Uptime *****
-									this.pdata_ut.push(Uptime);
-									if(this.data_ut.length < 13){
-											if(this.data_ut.length == 0){
-													this.data_ut.push(0);     
-											}else {
-													this.data_ut.push((this.pdata_ut[(this.pdata_ut.length)-1]) - (this.pdata_ut[(this.pdata_ut.length)-2]));
-											}
-									}
+								//***** push data Req_PerSec *****
+								this.pdata_rps.push(Req_PerSec);
+								if(this.data_rps.length < 13){
+										if(this.data_rps.length == 0){
+												this.data_rps.push(0);     
+										}else {
+												this.data_rps.push((this.pdata_rps[(this.pdata_rps.length)-1]) - (this.pdata_rps[(this.pdata_rps.length)-2]));
+										}
+								}
 
-									//***** push data Req_PerSec *****
-									this.pdata_rps.push(Req_PerSec);
-									if(this.data_rps.length < 13){
-											if(this.data_rps.length == 0){
-													this.data_rps.push(0);     
-											}else {
-													this.data_rps.push((this.pdata_rps[(this.pdata_rps.length)-1]) - (this.pdata_rps[(this.pdata_rps.length)-2]));
-											}
-									}
+								//***** push data Bytes_PerSec *****
+								this.pdata_bps.push(Bytes_PerSec);
+								if(this.data_bps.length < 13){
+										if(this.data_bps.length == 0){
+												this.data_bps.push(0);     
+										}else {
+												this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-2]) - (this.pdata_bps[(this.pdata_bps.length)-1]));
+										}
+								}
 
-									//***** push data Bytes_PerSec *****
-									this.pdata_bps.push(Bytes_PerSec);
-									if(this.data_bps.length < 13){
-											if(this.data_bps.length == 0){
-													this.data_bps.push(0);     
-											}else {
-													this.data_bps.push((this.pdata_bps[(this.pdata_bps.length)-2]) - (this.pdata_bps[(this.pdata_bps.length)-1]));
-											}
-									}
+								//***** push data Bytes_PerReq *****
+								this.pdata_bpr.push(Bytes_PerReq);
+								if(this.data_bpr.length < 13){
+										if(this.data_bpr.length == 0){
+												this.data_bpr.push(0);     
+										}else {
+												this.data_bpr.push((this.pdata_bpr[(this.pdata_bpr.length)-2]) - (this.pdata_bpr[(this.pdata_bpr.length)-1]));
+										}
+								}
 
-									//***** push data Bytes_PerReq *****
-									this.pdata_bpr.push(Bytes_PerReq);
-									if(this.data_bpr.length < 13){
-											if(this.data_bpr.length == 0){
-													this.data_bpr.push(0);     
-											}else {
-													this.data_bpr.push((this.pdata_bpr[(this.pdata_bpr.length)-2]) - (this.pdata_bpr[(this.pdata_bpr.length)-1]));
-											}
-									}
+								//***** push data Duration_PerReq *****
+								this.pdata_dpr.push(Duration_PerReq);
+								if(this.data_dpr.length < 13){
+										if(this.data_dpr.length == 0){
+												this.data_dpr.push(0);     
+										}else {
+												this.data_dpr.push((this.pdata_dpr[(this.pdata_dpr.length)-2]) - (this.pdata_dpr[(this.pdata_dpr.length)-1]));
+										}
+								}
 
-									//***** push data Duration_PerReq *****
-									this.pdata_dpr.push(Duration_PerReq);
-									if(this.data_dpr.length < 13){
-											if(this.data_dpr.length == 0){
-													this.data_dpr.push(0);     
-											}else {
-													this.data_dpr.push((this.pdata_dpr[(this.pdata_dpr.length)-2]) - (this.pdata_dpr[(this.pdata_dpr.length)-1]));
-											}
-									}
-
-
-									
 							} else {
 									//***** romove data index 0 *****
 									this.pdata_ta.splice(index, 1);
@@ -1328,7 +1325,7 @@
 									total_bpr += parseFloat(this.data_bpr[i]);
 							}
 							avg_bpr = total_bpr / ((length_bpr)-1);
-							
+
 
 							// ***** average data Duration_PerReq *****
 							var total_dpr = 0,
@@ -1368,102 +1365,102 @@
 							//**** alert ****
 							//message = "Accesses เกินค่าที่กำหนดไว้";
 							if(avg_ta < single_ta){   
-									//message = "Accesses เกินค่าที่กำหนดไว้";
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'Accesses เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("Accesses เกินค่าที่กำหนดไว้");
+								//message = "Accesses เกินค่าที่กำหนดไว้";
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'Accesses เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("Accesses เกินค่าที่กำหนดไว้");
 							}
 							if(avg_tk < single_tk){   
-									
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'KByte เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("KByte เกินค่าที่กำหนดไว้");
+								
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'KByte เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("KByte เกินค่าที่กำหนดไว้");
 							}
 							if(avg_cpus < this.data_cpus){   
-									//
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'CPU System เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									}); 
-									alert("CPU System เกินค่าที่กำหนดไว้");
+								//
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'CPU System เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								}); 
+								alert("CPU System เกินค่าที่กำหนดไว้");
 							}
 							if(avg_cpul + 0.01 < this.data_cpul || avg_cpul + 0.02 < this.data_cpul){
-									//
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'CPU Load เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("CPU Load เกินค่าที่กำหนดไว้");
+								//
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'CPU Load เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("CPU Load เกินค่าที่กำหนดไว้");
 							}
 							if(avg_rps + 0.03 < this.data_rps || avg_rps + 0.04 < this.data_rps){ 
-									//
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'Require Per Second เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("Require Per Second เกินค่าที่กำหนดไว้");
+								//
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'Require Per Second เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("Require Per Second เกินค่าที่กำหนดไว้");
 							}
 							if(avg_bps + 200 < this.data_bps || avg_bps + 300 < this.data_bps){ 
-									//
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'Byptes Per Second เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("Byptes Per Second เกินค่าที่กำหนดไว้");
+								//
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'Byptes Per Second เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("Byptes Per Second เกินค่าที่กำหนดไว้");
 							}
 							if(avg_dpr + 25 < this.data_dpr || avg_dpr + 50 <this.data_dpr){
-									//
-									axios.post('notify.php', {
-											// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
-									message: 'Duration Per Require เกินค่าที่กำหนดไว้'
-									})
-									.then(response => {
-									console.log("response: ", response);
-									})
-									.catch(error => {
-									console.log(error);
-									});
-									alert("Duration Per Require เกินค่าที่กำหนดไว้");
+								//
+								axios.post('notify.php', {
+										// เปลี่ยน 'Flintstone' เป็น ข้อความที่ต้องการ
+								message: 'Duration Per Require เกินค่าที่กำหนดไว้'
+								})
+								.then(response => {
+								console.log("response: ", response);
+								})
+								.catch(error => {
+								console.log(error);
+								});
+								alert("Duration Per Require เกินค่าที่กำหนดไว้");
 							}
 
 							//**** show data ****
@@ -1489,7 +1486,7 @@
       }
     },
     mounted() {
-        this.getData()
+      this.getData()
     }
     
   })
