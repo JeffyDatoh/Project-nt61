@@ -568,7 +568,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -622,7 +622,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -677,7 +677,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -733,7 +733,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -789,7 +789,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -845,7 +845,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -901,7 +901,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -957,7 +957,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -1013,7 +1013,7 @@
             refresh_chart: function() {
                 setInterval(() => {
                     this.renderChart(this.chartdata, this.options)
-                }, 3000)
+                }, 2000)
             }
         },
         mounted() {
@@ -1550,7 +1550,7 @@
         }
     },
     mounted() {
-      this.getData()
+        this.getData()
     }
     
   })
