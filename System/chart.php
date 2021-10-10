@@ -1546,7 +1546,7 @@
                   console.log('avg ta: ',avg_ta)
 
               }).catch((err) => console.log(err));
-          }, 60000 * 5); // 60000 =  60 วินาที
+          }, 3000); // 3000 =  3 วินาที
         }
     },
     mounted() {
