@@ -1453,6 +1453,7 @@
 
 							//**** show avg Total_Accesses ****
 							console.log('newdata:',this.data_ta[this.data_ta.length - 1])
+              console.log('single_ta:',single_ta)
 							console.log('Total ta: ',total_ta)
 							console.log('avg ta: ',avg_ta)
 
