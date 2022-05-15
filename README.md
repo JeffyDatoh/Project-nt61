@@ -5,7 +5,7 @@ Com-Sci Proeject NT071-608
 
 - PHP, CSS, HTML, Vue.js, vue-chartjs, vuetify, Axios
 
-# To-do List  🔥  🔥  🔥  เหลือเวลา 4 วัน  🔥  🔥  🔥 
+# To-do List  🔥  🔥  🔥 
 
 ## Index
 - หน้า index &#10060; ไฟล์ newchart.php
