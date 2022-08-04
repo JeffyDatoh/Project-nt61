@@ -1,9 +1,9 @@
-# Project-NT61
-Com-Sci Proeject NT071-608 
+# Web server performance monitoring system
+Com-Sci Project NT071-608 
 
-- Web Server Performance Monitoring System 
+## Tech Stack
 
-- PHP, CSS, HTML, Vue.js, vue-chartjs, vuetify, Axios
+- PHP, CSS, HTML, Vue.js, vue-chartjs, vuetify, Axios, Python, LineNotify
 
 # To-do List  🔥  🔥  🔥 
 
@@ -34,10 +34,6 @@ Com-Sci Proeject NT071-608
 - ปุ่ม สำหรับ ใส่ message and token &#10004;        ไฟล์ add_token.php
 - Alert to line notify &#10004;
 
-## เอกสารที่ต้องส่ง
-- Report &#10060;
-- Poster &#10060;
-- Paper &#10060;
 
 1 cron: every 5 min query
 24 * 12
