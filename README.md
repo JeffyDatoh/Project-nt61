@@ -12,4 +12,13 @@ Com-Sci Project NT071-608
   <img alt="Vuetify" src="https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=AEDDFF" /> 
   <img alt="Chart.js" src="https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white" /> 
 <p>
- 
+
+## Server Status Data 
+![image (2)](https://user-images.githubusercontent.com/87747635/183032008-a9114dd3-b43c-47b1-9bf9-7b8eacf43992.png)
+![image (1)](https://user-images.githubusercontent.com/87747635/183032013-5d1beee0-97b6-40cb-b317-2304a81e616d.png)
+
+## Server Status Chart 
+![image (4)](https://user-images.githubusercontent.com/87747635/183031974-4e38734b-253a-4ded-8f9b-4c1a169b0f00.png)
+
+## Alert to LineNotify
+![image (3)](https://user-images.githubusercontent.com/87747635/183031992-d7e1b2d1-a302-409c-be04-770c6999f8fd.png)
