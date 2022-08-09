@@ -1,6 +1,9 @@
 # Web server performance monitoring system
 Com-Sci Project NT071-608 
 
+
+## หลักการทำงาน
+ทำการดึงข้อมูลสถานะของ Server จาก Server Status (Apache Server) มาแสดงผลในรูปแบบของกราฟ เพื่อให้ผู้ดูแลระบบสามารถตรวจสอบสถานะได้ง่ายดายมากขึ้น นอกจากนี้ หากมีค่าข้อมูลที่ผิดปกติหรือคาดว่าถูกผู้ไม่หวังดีโจมตีด้วย HTTP Flood ระบบสามารถแจ้งเตือนไปยังผู้ดูแลระบบได้ผ่าน Line Notify
 ## Tech Stack
 
 - PHP, CSS, HTML, Vue.js, vue-chartjs, vuetify, Axios, Python, LineNotify
